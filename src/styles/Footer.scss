@@ -1,0 +1,26 @@
+.Footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 0 3rem;
+}
+
+.FooterNav {
+  display: flex;
+  gap: 6rem;
+  padding-left: 7rem;
+}
+
+
+
+.Footer-icons-links-wrap {
+  display: flex;
+  gap: 1rem;
+}
+
+.Footer-links-img {
+  max-width: 33px;
+  max-height: 33px;
+
+}

@@ -1,0 +1,32 @@
+.HeaderContainer {
+  // position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  align-items: center;
+  padding-top: 1rem;
+
+  .HeaderComponent {
+    padding: 0 10px;
+
+    .HeaderNav {
+      list-style: none;
+      display: flex;
+      padding: 0 5rem 0 0 ;
+    }
+
+    .HeaderNavOption {
+      // 
+      margin: 0 20px;
+      // color: white;
+      font-size: 20px;
+    }
+  }
+
+  .HeaderLogo {
+    padding: 10px;
+    padding: 0 5rem;
+  }
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  // font-family: 'Poppins', sans-serif;
+  max-width: 1920px;
+  height: auto;
+  overflow-x: hidden;
+  --primary-color: #2FC4B2;
+  --secondary-color: #F5FFF4;
+}
+
+.mainVisual-wrap {
+  background-color: var(--primary-color);
+  padding: 0 4rem 2rem 4rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // flex-direction: column;
+  padding: 0 5rem;
+}
+
+.mv-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 13rem;
+  gap: 1rem;
+  margin-bottom: 6rem;
+}
+
+.mv-me {
+  max-width: 600px;
+  height: auto;
+}
+
+.mv-h1,
+.mv-h2 {
+  font-family: 'Just Me Again Down Here', cursive;
+  color: #fff;
+  text-align: center;
+}
+
+.mv-h1 {
+  font-size: 67px;
+}
+.mv-h2 {
+  font-size: 33px;
+}
+
+.icons-links-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.links-img  {
+  max-width: 66px;
+  max-height: 66px;
+
+}
+
+
+.btn-view {
+  width: 183px;
+  height: 82px;
+  background-color: #F5FFF4;
+  color: #2C2929;
+  // position: absolute;
+  // bottom: 23%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+.mv-p {
+
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'poppins';
+  line-height: 3rem;
+}
+
+.mv-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
+//Footer
+
+.footer {
+  background-color: #2FC4B2;
+  display: flex;
+  justify-content: flex-start;
+  gap: 25%;
+  align-items: flex-end;
+  // padding-bottom: 2rem;
+  padding: 0 4rem 2rem 4rem;
+}
