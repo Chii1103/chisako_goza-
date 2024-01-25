@@ -9,6 +9,8 @@
   overflow-x: hidden;
   --primary-color: #2FC4B2;
   --secondary-color: #F5FFF4;
+  --pink-color: pink;
+  
 }
 
 .mainVisual-wrap {
@@ -101,3 +103,10 @@
   // padding-bottom: 2rem;
   padding: 0 4rem 2rem 4rem;
 }
+
+.section{
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+}
+

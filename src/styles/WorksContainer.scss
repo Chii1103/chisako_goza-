@@ -1,6 +1,44 @@
-.workContainer-wrap{
-  width: 30%;
-  height: auto;
-  background-color: pink;
+.worksContainer{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   
+  .workContainer-wrap{
+    min-height: 120px;
+    margin: 10px;
+    border-radius: 1rem;
+    
+    background-color: var(--pink-color); 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .workImage{
+      margin: 15px;
+      max-width: 80%;
+      max-height: 100px;
+      border: 1px solid black;
+      border-radius: 1rem;
+    }
+
+    .workTitle{
+      font-size: 25px;
+    }
+
+    .workExplanation{
+      font-size: 14px;
+    }
+
+    .workButtons{
+      margin: 20px;
+      font-size: 25px;
+
+      .workButton{
+        margin: 0 15px;
+      }
+    }
+  }
 }

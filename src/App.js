@@ -36,79 +36,19 @@ const sections = [
   },
 ]
 
-const worksArray = [
-  {
-    // workImg: Image from '/images/mainVisual',
-    workTitle: 'Lawoffice website',
-    workExplanation: 'this is the website for law office in Oklahoma.',
-    // gitHub:'',
-    //   demo:'',
-  },
-  {
-    // workImg: Image from '/images/mainVisual',
-    workTitle: 'Dentist website',
-    workExplanation: 'this is the website for law office in Japan.',
-    // gitHub:'',
-    //   demo:'',
-  },
-  {
-    // workImg: Image from '/images/mainVisual',
-    workTitle: 'Abagauss',
-    workExplanation: 'I will collaborate this project with Sanket Jain.',
-    // gitHub:'',
-    //   demo:'',
-  },
-  {
-    // workImg: Image from '/images/mainVisual',
-    workTitle: 'Quiz App',
-    workExplanation: 'Using HTML, CSS and JavaScript',
-    // gitHub:'',
-    //   demo:'',
-  },
-  {
-    // workImg: Image from '/images/mainVisual',
-    workTitle: 'Todo List App',
-    workExplanation: 'Using HTML, CSS and JavaScript',
-    // gitHub:'',
-    //   demo:'',
-  },
-  {
-    // workImg: Image from '/images/mainVisual',
-    workTitle: 'Digital clock',
-    workExplanation: 'Using HTML, CSS and JavaScript',
-    // gitHub:'',
-    //   demo:'',
-  },
-  {
-    // workImg: Image from '/images/mainVisual',
-    workTitle: 'Tic Tac Toe game',
-    workExplanation: 'Using HTML, CSS and JavaScript',
-    // gitHub:'',
-    //   demo:'',
-  }
-
-]
 
 const App = () => {
   return (
     <div className="App">
       <Header />
       <MainVisual />
-      {sections.map((section, s) =>
-        <Card key={s} title={section.title} body={section.body} />)}{/**Key is required here */}
-
-      {worksArray.map((work, idx) =>
-        <WorksContainer
-          key={idx}
-          workImg={work.workImg}
-          workTitle={work.workTitle}
-          workExplanation={work.workExplanation}
-          gitHub={work.gitHub}
-          demo={work.demo}
-        />
-      )}
-
-
+      {/* {sections.map((section, s) =>
+        <Card key={s} title={section.title} body={section.body} />)
+      } */}
+      <Card title={'About'} body={['Hello']}/>
+      <WorksContainer />
+      <Card title={'Flowers'} body={['Himawari', 'others']}/>
+      
       <Footer />
     </div>
   );
