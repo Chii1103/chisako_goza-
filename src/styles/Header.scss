@@ -1,12 +1,19 @@
 .HeaderContainer {
-  // position: fixed;
+  // This property lets the header component stay on screen
+  position: fixed;
+  // This property brings the header component on the top
   z-index: 1;
   width: 100%;
+
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   align-items: center;
-  padding-top: 1rem;
+  height: var(--header-height);
+
+  border-bottom: 0.5px solid grey;
+  font-family: var(--font-family-main);
+  font-weight: 300;
 
   .HeaderComponent {
     padding: 0 10px;
@@ -14,19 +21,16 @@
     .HeaderNav {
       list-style: none;
       display: flex;
-      padding: 0 5rem 0 0 ;
     }
 
     .HeaderNavOption {
-      // 
       margin: 0 20px;
-      // color: white;
       font-size: 20px;
     }
   }
 
   .HeaderLogo {
-    padding: 10px;
-    padding: 0 5rem;
+    // padding: 10px;
+    height: calc(var(--header-height) - 15px)
   }
 }

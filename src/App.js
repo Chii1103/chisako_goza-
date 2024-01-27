@@ -20,32 +20,6 @@ import './styles/ContactContainer.scss';
 import './styles/Footer.scss';
 
 
-
-
-const sections = [
-  {
-    title: 'About',
-    body: ['Accurate', 'Interactive Communication', 'Curiosity']
-
-  },
-  {
-    title: 'Works',
-    body: ['1', '2', '3']
-
-  },
-  {
-    title: 'Flower Arrangement',
-    body: ['T', 'B', 'D']
-
-  },
-  {
-    title: 'Contact',
-    body: ['My Resume', 'My Email', 'My Instagram']
-
-  },
-]
-
-
 const App = () => {
   return (
     <div className="App">
