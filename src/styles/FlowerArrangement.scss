@@ -1,0 +1,32 @@
+.flowerSectionWrap{
+width: 80%;
+margin: 0 auto;
+padding: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: pink;
+
+.flowerLeft{
+  font-size: 16px;
+}
+
+.flowerCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3.3rem;
+}
+
+.flowerBottom{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+margin: 1rem auto;
+  .igLogo{
+    font-size: 33px;
+  }
+}
+}
