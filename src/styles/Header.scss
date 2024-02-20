@@ -1,20 +1,27 @@
 .HeaderContainer {
-  // position: fixed;
+  // background-color: linear-gradient( 126deg, rgb(20 79 255 / 96%) 0%, rgb(85 133 205) 96% );
+  position: fixed;
   z-index: 1;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-color);
   align-items: center;
   padding-top: 1rem;
-
+  background: #7dd4ff;
+  background-position: top bottom;
+  .HeaderLogo{
+    &:active {
+      transform: scale(0.95); 
+      opacity: 0.8; 
+    }
+  }
   .HeaderComponent {
     padding: 0 10px;
-
+    cursor: pointer;
     .HeaderNav {
       list-style: none;
       display: flex;
-      padding: 0 5rem 0 0 ;
+      // padding: 0 5rem 0 0 ;
     }
 
     .HeaderNavOption {
@@ -22,11 +29,55 @@
       margin: 0 20px;
       // color: white;
       font-size: 20px;
+
+       &:active {
+      transform: scale(0.95); 
+      opacity: 0.8; 
     }
+    }
+
+ 
+  }
+  .menuIcon{
+    display: none;
   }
 
-  .HeaderLogo {
-    padding: 10px;
-    padding: 0 5rem;
+}
+
+/*smartphone */
+@media  screen and (max-width: 599px) {
+  .HeaderContainer {
+
+    .menuIcon{
+      display: block;
+      font-size: 23px;
+    }
+  
+    .HeaderComponent {
+      .HeaderNav {
+        display: none;
+      }
+    }
   }
 }
+
+/* tablet */
+@media  screen and (min-width: 600px) and (max-width: 959px) {
+  .HeaderContainer {
+    .menuIcon{
+      display: block;
+      font-size: 33px;
+    }
+    .HeaderComponent {
+      .HeaderNav {
+        display: none;
+      }
+    }
+  }
+}
+
+// /* pc */
+// @media only screen and (min-width: 960px) {
+
+// }
+

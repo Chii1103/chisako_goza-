@@ -8,6 +8,8 @@ import FlowerArrangement from './components/FlowerArrangement';
 import ContactContainer from './components/ContactContainer';
 import Footer from './components/Footer';
 
+
+import './styles/Common.scss';
 import './styles/Header.scss';
 import './styles/Main.scss';
 import './styles/Card.scss';
