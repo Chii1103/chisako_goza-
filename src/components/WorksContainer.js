@@ -6,7 +6,7 @@ const worksArray = [
     workImg: '/images/law.jpg',
     workTitle: 'Lawoffice website',
     workExplanation: 'this is the website for law office in Oklahoma.',
-    demo: null
+    // demo: null
   },
   {
     workImg: '/images/dentist.jpg',
@@ -26,21 +26,21 @@ const worksArray = [
     workImg: '/images/quiz.jpg',
     workTitle: 'Quiz App',
     workExplanation: 'Using HTML, CSS and JavaScript',
-    // gitHub:'',
+    gitHub:'https://github.com/Chii1103/Quiz-App',
     //   demo:'',
   },
   {
     workImg: '/images/toDo.jpg',
     workTitle: 'Todo List App',
     workExplanation: 'Using HTML, CSS and JavaScript',
-    // gitHub:'',
+    gitHub:'https://github.com/Chii1103/ToDo-App',
     //   demo:'',
   },
   {
-    workImg: '/images/ticTacToe.jpg',
-    workTitle: 'Tic Tac Toe game',
-    workExplanation: 'Using HTML, CSS and JavaScript',
-    // gitHub:'',
+    workImg: '/images/weatherApp.jpg',
+    workTitle: 'Weather App',
+    workExplanation: 'Using HTML, CSS and JavaScript, API',
+    gitHub:'https://github.com/Chii1103/Weather-App',
     //   demo:'',
   }
 

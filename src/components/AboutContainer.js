@@ -22,25 +22,10 @@ const aboutArray = [
   }
 ]
 
-// const skillArray = [
-//   {
-//    skillName: 'HTML',
-//   },
-//   {
-//    skillName: 'CSS',
-//   },
-//   {
-//    skillName: 'JavaScript',
-//   },
-//   {
-//    skillName: 'React',
-//   }
-
-// ]
 
 
 const AboutCard = ({ aboutTitle, aboutImg }) => (
-  <div className="aboutContainer-wrap" >
+  <div className="aboutContainer-wrap" id="about" >
     <h3 className="aboutTitle">{aboutTitle}</h3>
     <div className="aboutImg" >{aboutImg}</div>
   </div>

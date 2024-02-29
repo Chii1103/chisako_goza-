@@ -28,22 +28,33 @@
     // max-width: 100%;
     width: 30%;
     gap: 1rem;
-    .contactContainer-wrap {
-      height: auto;
-      // width: 13%;
-      // margin: 8px;
-      padding: 1rem;
-      border-radius: 50%;
-      background-color: var(--secondary-color);
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      // aspect-ratio: 1/1;
 
+    .contactContainer-wrap {
+      // height: auto;
+      // // width: 13%;
+      // // margin: 8px;
+      // padding: 1rem;
+      // border-radius: 50%;
+      // background-color: var(--secondary-color);
+      // display: flex;
+      // justify-content: space-around;
+      // align-items: center;
+      // // aspect-ratio: 1/1;
+
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.5px;
+      background: #fff;
+      color: #fff;
 
       & a {
         text-decoration: none;
-
+        color: var(--black-color);
       }
 
 
@@ -59,6 +70,7 @@
       font-size: 23px;
       transition: transform 0.3s;
       // line-height: 1;
+      color: var(--black-color);
 
       &:hover {
         cursor: pointer;
@@ -71,7 +83,7 @@
 
 }
 
-#contact {
+.contactWrap {
   position: relative;
   padding: 3rem 0 13rem 0;
 
@@ -110,29 +122,32 @@
   .contactContainer {
     .contactIcon {
       flex-direction: column;
-      // margin: 0 25%;
-    }
+      align-items: center;
 
-    .contactContainerInner {
-      gap: 0;
-      padding: 0;
-      // width: 39%;
-      display: flex;
-      justify-content: start;
-      margin-bottom: 8px;
-      gap: 3rem;
 
-      .contactTitle {
-        font-size: 13px;
-      }
+      .contactContainerInner {
+        gap: 0;
+        padding: 0;
+        // width: 39%;
+        display: flex;
+        justify-content:flex-start;
+        margin-bottom: 8px;
+        gap: 3rem;
+        width: 50%;
 
-      .contactContainer-wrap {
-        width: 19%;
-        margin: 0;
-        padding: 1rem;
-        min-width: 30px;
+        .contactTitle {
+          font-size: 13px;
+        }
 
-        .contactContainer {
+        .contactContainer-wrap {
+          width: 19%;
+          margin: 0;
+          padding: 1rem;
+          min-width: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
           .contactTitle {
             font-size: 9px;
           }
@@ -140,19 +155,20 @@
           .contactImg svg {
             font-size: 21px;
           }
-        }
-      }
 
+        }
+
+      }
     }
   }
 
-  #contact {
+.contactWrap{
     .pageTopWrap {
       .textTop {
         font-size: 9px;
       }
     }
-  }
+}
 
 }
 
@@ -174,7 +190,7 @@
       }
     }
 
-    #contact {
+    .contactWrap {
       .pageTopWrap {
         .textTop {
           font-size: 13px;

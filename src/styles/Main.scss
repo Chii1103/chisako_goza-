@@ -1,5 +1,5 @@
 * {
-  @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
   padding: 0;
   margin: 0;
   // font-family: 'Poppins', sans-serif;
@@ -8,31 +8,43 @@
   overflow-x: hidden;
   // --primary-color: #2FC4B2;
   // --primary-color: #D2E6F7;
-  --primary-color: #52AAEA;
-  --secondary-color: #FFF4F4;
+  --primary-color: #52aaea;
+  --secondary-color: #fff4f4;
   --pink-color: rgb(255, 183, 195);
   --black-color: #101010;
 
-  --primary-font-family: 'Italiana', sans-serif;
+  --primary-font-family: "Italiana", sans-serif;
 
+  /*--------------custom scrollbar----------------*/
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #d1e5ff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#edaccfba, #e96196);
+    border-radius: 10px;
+  }
 }
 
 // .App {
 
 // }
 
-
 .mainVisual-wrap {
   background-image: url(../../public/images/bgImg.jpg);
   background-repeat: no-repeat;
   max-width: 100%;
-  height: 100vh;
+  height: auto;
   background-position: center center;
   background-size: cover;
   /* margin: auto; */
   /* padding: 4rem 0 4rem; */
   font-family: var(--primary-font-family);
   position: relative;
+  padding: 11% 0 0 0;
 
   .mvSakuraS1 {
     width: 3%;
@@ -40,7 +52,8 @@
     position: absolute;
     top: 36%;
     right: 20%;
-    animation: fall 4s linear infinite, rotate1 3s ease-in-out infinite alternate;
+    animation: fall 4s linear infinite,
+      rotate1 3s ease-in-out infinite alternate;
   }
 
   .mvSakuraS2 {
@@ -49,9 +62,9 @@
     position: absolute;
     top: 13%;
     right: 19%;
-    animation: fall 4s ease-in infinite, rotate1 6s ease-in-out infinite alternate;
+    animation: fall 4s ease-in infinite,
+      rotate1 6s ease-in-out infinite alternate;
   }
-
 
   .mvSakuraM {
     width: 6%;
@@ -59,18 +72,41 @@
     position: absolute;
     bottom: 26%;
     left: 15%;
-    animation: fall 4s ease-in-out infinite, rotate1 5s ease-in-out infinite alternate;
+    animation: fall 4s ease-in-out infinite,
+      rotate1 5s ease-in-out infinite alternate;
   }
 
   .mv-h1 {
     // font-family: 'Just Me Again Down Here', cursive;
     color: var(--black-color);
-    text-align: justify;
-    margin: 5rem auto;
+    text-align: center;
+    display: block;
+    // margin: 5rem auto;
     font-size: 67px;
     font-weight: 550;
-    animation: slide-right 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
- 
+    // animation: typing 6.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    position: absolute;
+    left: 0;
+    right: 0;
+    // typing animation try area 
+    width: 24ch;
+    animation: typing 3s steps(24), effect .5s step-end infinite alternate;
+    white-space: nowrap;
+    border-right: 3px solid;
+
+    // typing animation try area 
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes effect {
+    50% {
+      border-color: transparent
+    }
   }
 
   @keyframes rotate1 {
@@ -79,7 +115,8 @@
     }
 
     to {
-      transform: translateX(200px) translateY(3px) rotate(-80deg) rotateX(180deg);
+      transform: translateX(200px) translateY(3px) rotate(-80deg)
+        rotateX(180deg);
     }
   }
 
@@ -93,23 +130,30 @@
     }
   }
 
-  @keyframes slide-right {
-    from {
-      transform: translateX(0);
-    }
+  // @keyframes slide-right {
+  //   from {
+  //     transform: translateX(-100%);
+  //   }
 
-    to {
-      transform: translateX(25%);
-    }
-  }
+  //   to {
+  //     // transform: translateX(calc(50% - (1920px / 2)));
+  //     transform: translateX(100%);
+  //   }
+  // }
 
-
-
-
+  // @keyframes slide-right {
+  //   0% {
+  //     -webkit-transform: translateY(0) translateX(0);
+  //             transform: translateY(0) translateX(0);
+  //   }
+  //   100% {
+  //     -webkit-transform: translateY(50%) translateX(50%);
+  //             transform: translateY(50%) translateX(50%);
+  //   }
+  // }
 }
 
 .mvInner {
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -122,8 +166,6 @@
     // left: 4.5rem;
   }
 
-
-
   .mv-center {
     display: flex;
     flex-direction: column;
@@ -134,12 +176,10 @@
     width: 36%;
   }
 
-
-
   .mv-me {
     max-width: 600px;
     height: auto;
-    filter: brightness(.9);
+    filter: brightness(0.9);
   }
 
   .icons-links-wrap {
@@ -151,13 +191,11 @@
   .links-img {
     max-width: 66px;
     max-height: 66px;
-
   }
 
-  .links-img:hover{
+  .links-img:hover {
     opacity: 0.6;
   }
-
 
   // .btn-view {
   //   width: 183px;
@@ -169,8 +207,6 @@
   //   // left: 50%;
   //   // transform: translate(-50%, -50%);
   // }
-
-
 
   .mv-right {
     display: flex;
@@ -186,13 +222,10 @@
   }
 }
 
-
-
-
 //Footer
 
 .footer {
-  background-color: #2FC4B2;
+  background-color: #2fc4b2;
   display: flex;
   justify-content: flex-start;
   gap: 25%;
@@ -207,43 +240,45 @@
   padding: 20px 0;
 }
 
-
 /*smartphone */
-@media  screen and (max-width: 599px) {
-  .mainVisual-wrap 
-  {
+@media screen and (max-width: 599px) {
+  .mainVisual-wrap {
     height: auto;
     .mv-h1 {
       margin: 6rem auto 3rem auto;
 
       font-size: 19px;
-  
+    }
   }
+
+  /*--------------custom scrollbar----------------*/
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
 
-.mvInner{
+.mvInner {
   display: flex;
   // width: 100%;
   // padding: 3rem;
-  /* margin: 0; */
+  margin: 10% 0 0 0;
   flex-direction: column-reverse;
-  .mv-left{
+  .mv-left {
     width: 100%;
-    .icons-links-wrap{
+    .icons-links-wrap {
       flex-direction: row;
       justify-content: center;
       margin-bottom: 24px;
     }
   }
-  .mv-center{
-    .mv-me{
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 24px;
+  .mv-center {
+    .mv-me {
+      width: 100%;
+      height: fit-content;
+      margin-bottom: 24px;
     }
   }
-  .mv-right{
+  .mv-right {
     width: 55%;
     font-size: 13px;
     font-weight: 600;
@@ -251,22 +286,25 @@
     margin-bottom: 24px;
   }
 
-  .links-img{
+  .links-img {
     width: 33px;
   }
 }
 
 /* tablet */
-@media  screen and (min-width: 600px) and (max-width: 959px) {
-.mainVisual-wrap{
-  .mv-h1{
-    font-size: 36px;
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .mainVisual-wrap {
+    .mv-h1 {
+      font-size: 36px;
+    }
   }
+
+  /*--------------custom scrollbar----------------*/
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  
 }
 
-}
-
-// /* pc */
-// @media only screen and (min-width: 960px) {
-
-// }

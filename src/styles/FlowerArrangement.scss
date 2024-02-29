@@ -10,7 +10,7 @@
   font-family: var(--primary-font-family);
   // padding: 3rem;
 
-    .flowerContainer{
+  .flowerContainer {
     display: flex;
     flex-wrap: wrap;
     margin: 3%;
@@ -18,64 +18,71 @@
     justify-content: center;
     gap: 3rem;
 
-   
 
-      .flowerContainer-wrap{
-        width: 26%;
-        height: auto;
-        background: #fff;
-        // min-height: 530px;
-        margin: 10px;
-        border-radius: 1rem;
+
+    .flowerContainer-wrap {
+      width: 26%;
+      height: auto;
+      background: #fff;
+      // min-height: 530px;
+      margin: 10px;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+      align-items: center;
+
+      &:hover {
+        opacity: .85;
+      }
+
+      .iconWrap {
         display: flex;
-        flex-direction: column;
-        // justify-content: space-between;
         align-items: center;
+        margin: 1rem;
+        gap: .3rem;
 
-        &:hover{
-          opacity: .85;
+        .iconImg {
+          width: 15%;
+          height: auto;
+          border-radius: 50%;
+          aspect-ratio: 1/1;
         }
-    .iconWrap{
-      display: flex;
-      align-items: center;
-      margin: 1rem;
-      gap: .3rem;
-      .iconImg{
-        width: 15%;
+
+        .iconName {
+          font-size: 13px;
+        }
+
+      }
+
+      .flowerImg {
+        width: 80%;
         height: auto;
-        border-radius: 50%;
-        aspect-ratio: 1/1;
+        margin-top: 1rem;
+        max-height: 314.55px;
+        max-width: 270px;
       }
-      .iconName{
-        font-size: 13px;
+
+      .flowerButtons {
+        display: flex;
+        justify-content: space-between;
+        gap: 8rem;
+        align-items: center;
+        font-size: 31px;
+        margin: 1rem auto;
+
+        .flowerLeftButtons {
+          display: flex;
+          justify-content:flex-start;
+          align-items: center;
+        }
       }
-      
-    }
-    .flowerImg{
-      width: 80%;
-      height:auto;
-      margin-top: 1rem;
+
     }
 
-    .flowerButtons{
-      display: flex;
-      justify-content: space-between;
-      gap: 8rem ;
-      align-items: center;
-      font-size: 31px;
-      margin: 1rem auto;
-      .flowerLeftButtons{
-        display: flex;
-        justify-content: start;
-        align-items: center;
-      }
-    }
+
 
   }
- 
-
-
-}
 
 
 
@@ -86,7 +93,7 @@
       width: 22%;
       height: auto;
 
-     
+
     }
 
     .section-title {
@@ -102,23 +109,25 @@
     gap: 0.9%;
 
 
-    .frame{
+    .frame {
       background: #fff;
-    border-radius: 24px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    margin: 100px auto;
-    padding: 20px 14px 40px;
-    max-width: 33%;
-    width: 100%;
-    min-height: 600px;
-    font-size: 14px;
-      .picHead{
+      border-radius: 24px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      margin: 100px auto;
+      padding: 20px 14px 40px;
+      max-width: 33%;
+      width: 100%;
+      min-height: 600px;
+      font-size: 14px;
+
+      .picHead {
         display: flex;
         // flex-direction: column;
         padding: .5rem;
         justify-content: flex-start;
         align-items: center;
-        .picIcon img{
+
+        .picIcon img {
           width: 30%;
           height: auto;
           border-radius: 50%;
@@ -169,29 +178,60 @@
     margin: 2.5rem auto;
   }
 
-  .flower-instagram{
+  .flower-instagram {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 31px;
     gap: 1rem;
   }
-  
+
+}
+
+.liked {
+  color: red;
+  background-color: red;
 }
 
 /*smartphone */
 @media screen and (max-width: 599px) {
 
-  .section-wrap{
-    .flowerContainer{
-   flex-wrap: nowrap;
-   flex-direction: column;
-   .flowerContainer-wrap{
-    width: 60%;
-   }
+  .section-wrap {
+    .flowerContainer {
+      flex-wrap: nowrap;
+      flex-direction: column;
+
+      .flowerContainer-wrap {
+        width: 60%;
+      }
     }
   }
 
 
 
+}
+
+
+
+
+/* tablet */
+@media screen and (min-width: 600px) and (max-width: 959px) {
+
+  .section-wrap {
+    .flowerContainer {
+      .flowerContainer-wrap {
+        max-height: 383.69px;
+        min-width: 229px;
+        .flowerButtons {
+          font-size: 11px;
+        }
+
+        .flowerImg {
+          max-height: 244.36px;
+          height: auto;
+        }
+      }
+
+    }
+  }
 }

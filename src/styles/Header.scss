@@ -9,15 +9,18 @@
   padding-top: 1rem;
   background: linear-gradient(45deg, #aef3ffe0, #558eff);
   background-position: top bottom;
-  .HeaderLogo{
+
+  .HeaderLogo {
     &:active {
-      transform: scale(0.95); 
-      opacity: 0.8; 
+      transform: scale(0.95);
+      opacity: 0.8;
     }
   }
+
   .HeaderComponent {
     padding: 0 10px;
     cursor: pointer;
+
     .HeaderNav {
       list-style: none;
       display: flex;
@@ -30,44 +33,53 @@
       // color: white;
       font-size: 20px;
 
-       &:active {
-      transform: scale(0.95); 
-      opacity: 0.8; 
-    }
+      &:active {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
     }
 
- 
+
   }
-  .menuIcon{
+
+  .menuIcon {
     display: none;
   }
 
 }
 
 /*smartphone */
-@media  screen and (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .HeaderContainer {
 
-    .menuIcon{
+    .menuIcon {
       display: block;
+      position: fixed;
+      top: 25px;
+      right: 20px;
       font-size: 23px;
     }
-  
+
     .HeaderComponent {
       .HeaderNav {
         display: none;
       }
+
+
+
+      }
     }
   }
-}
+
 
 /* tablet */
-@media  screen and (min-width: 600px) and (max-width: 959px) {
+@media screen and (min-width: 600px) and (max-width: 959px) {
   .HeaderContainer {
-    .menuIcon{
+    .menuIcon {
       display: block;
       font-size: 33px;
     }
+
     .HeaderComponent {
       .HeaderNav {
         display: none;
@@ -80,4 +92,3 @@
 // @media only screen and (min-width: 960px) {
 
 // }
-

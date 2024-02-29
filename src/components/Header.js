@@ -1,17 +1,26 @@
+import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header() {
+
+const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+ const toggleMenu = () => {
+  setIsMenuOpen(!isMenuOpen);
+ };
+
   return (
     <div className='HeaderContainer' id="headerTop" >
-      <img className='HeaderComponent HeaderLogo' src="/images/logo_cg.png" alt="logo" />
-      <nav className='HeaderComponent'>
+     <a href="#"> <img className='HeaderComponent HeaderLogo' src="/images/logo_cg.png" alt="logo" /> </a>
+     
+      <nav className={`HeaderComponent ${isMenuOpen ? 'open' : ''}`}>
         <ul className='HeaderNav'>
-        <a href="#about"> <li className='HeaderNavOption' id="about" >About</li> </a>
-          <a href="#projectsTop">  <li className='HeaderNavOption' id="projectsNav">Projects</li> </a>
-          <a href="#contact"> <li className='HeaderNavOption' id="resumeNav">Resume</li> </a>
+         <li className='HeaderNavOption' id="about"> About</li> 
+          <li className='HeaderNavOption' id="projectsTop" > Projects</li> 
+        <li className='HeaderNavOption' id="contact" >Resume</li> 
         </ul>
       </nav>
-      <div className="menuIcon"><RxHamburgerMenu /></div>
+      <div className="menuIcon" onClick={toggleMenu}><RxHamburgerMenu /></div>
     </div>
   )
 }

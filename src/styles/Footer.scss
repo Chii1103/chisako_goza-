@@ -42,6 +42,7 @@
 .Footer-icons-links-wrap {
   display: flex;
   gap: 1rem;
+  padding-right: 0.3rem;
 
   .Footer-links-img {
     max-width: 33px;
@@ -72,5 +73,16 @@
     }
   }
 }
+
+}
+
+/* tablet */
+@media  screen and (min-width: 600px) and (max-width: 959px) {
+
+  .Footer-wrap .FooterComponent .FooterNav {
+   
+    padding-left: 0rem;
+}
+
 
 }
