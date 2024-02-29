@@ -52,7 +52,7 @@ const WorkCard = ({ workImg, workTitle, workExplanation, gitHub, demo }) => (
     <h3 className="workTitle">{workTitle}</h3>
     <div className="workExplanation">{workExplanation}</div>
     <div className="workButtons">
-      {gitHub ? <span className="workButton"><VscGithubInverted /></span> : <></>}
+      {gitHub ? <a href={gitHub} target="_blank" className="workButton"><VscGithubInverted /></a> : <></>}
       {demo ? <span className="workButton"><HiOutlineGlobeAlt /></span> : <></>}
     </div>
   </div>
