@@ -5,22 +5,29 @@ function Header() {
 
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 
- const toggleMenu = () => {
-  setIsMenuOpen(!isMenuOpen);
- };
+// use state syntax is 
+// const [value, modifier] = useState(initialValue);
+
+ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <div className='HeaderContainer' id="headerTop" >
-     <a href="#"> <img className='HeaderComponent HeaderLogo' src="/images/logo_cg.png" alt="logo" /> </a>
+     <a href="#"> <img className='HeaderLogo' src="/images/logo_cg.png" alt="logo" /> </a>
      
-      <nav className={`HeaderComponent ${isMenuOpen ? 'open' : ''}`}>
-        <ul className='HeaderNav'>
-         <li className='HeaderNavOption' id="about"> About</li> 
-          <li className='HeaderNavOption' id="projectsTop" > Projects</li> 
-        <li className='HeaderNavOption' id="contact" >Resume</li> 
-        </ul>
+      <nav className={`HeaderComponent`}>
+          <a className='HeaderNavOption' href="#about"> About</a> 
+          <a className='HeaderNavOption' href="#projectsTop" > Projects</a> 
+          <a className='HeaderNavOption' href="#contact" >Resume</a> 
       </nav>
       <div className="menuIcon" onClick={toggleMenu}><RxHamburgerMenu /></div>
+      {
+        isMenuOpen ? <div className="HeaderDrawer">
+          <a className='DrawerOption' href="#about"> About</a> 
+          <a className='DrawerOption' href="#projectsTop" >Projects</a> 
+          <a className='DrawerOption' href="#contact" >Resume</a> 
+        </div>
+        : <></>
+      }
     </div>
   )
 }

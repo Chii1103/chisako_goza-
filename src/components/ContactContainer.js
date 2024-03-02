@@ -31,7 +31,7 @@ const ContactCard = ({ contactTitle, contactImg, contactLink }) => (
 )
 
 const ContactContainer = () => {
-  return <div className="section-wrap contactWrap" >
+  return <div className="section-wrap contactWrap" id='contact' >
     <div className="titleWrap">
       <img className="titleSakura" src="../images/sakuraL.png" />
       <h2 className="section-title">Contact</h2>

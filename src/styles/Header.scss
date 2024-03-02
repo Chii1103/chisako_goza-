@@ -32,6 +32,8 @@
       margin: 0 20px;
       // color: white;
       font-size: 20px;
+      text-decoration: none;
+      color: black;
 
       &:active {
         transform: scale(0.95);
@@ -39,54 +41,67 @@
       }
     }
 
-
   }
 
   .menuIcon {
     display: none;
   }
 
-}
-
-/*smartphone */
-@media screen and (max-width: 599px) {
-  .HeaderContainer {
-
-    .menuIcon {
-      display: block;
-      position: fixed;
-      top: 25px;
-      right: 20px;
-      font-size: 23px;
-    }
-
-    .HeaderComponent {
-      .HeaderNav {
-        display: none;
-      }
-
-
-
-      }
-    }
+  .HeaderDrawer{
+    display: none;
   }
 
+}
 
 /* tablet */
-@media screen and (min-width: 600px) and (max-width: 959px) {
+@media screen and (max-width: 959px) {
   .HeaderContainer {
+    .HeaderComponent{
+      display: none;
+    }
+
     .menuIcon {
       display: block;
       font-size: 33px;
+      padding-right: 15px;
     }
 
-    .HeaderComponent {
-      .HeaderNav {
-        display: none;
+    .HeaderDrawer{
+      display: block;
+      position: fixed;
+      
+      height: calc(100vh - 70px);
+      top: 0;
+      right: 0;
+      margin-top: 70px;
+      background-color: black;
+      width: 33vw;
+      display: flex;
+      flex-direction: column;
+
+      .DrawerOption{
+        font-size: 30px;
+        margin: 10px 0;
+        cursor: pointer;
+
+        text-decoration: none;
+        color: white;
+
       }
     }
   }
 }
+
+/*smartphone */
+// @media screen and (max-width: 599px) {
+//   .HeaderContainer {
+//     .menuIcon {
+//       font-size: 23px;
+//     }
+//   }
+// }
+
+
 
 // /* pc */
 // @media only screen and (min-width: 960px) {
