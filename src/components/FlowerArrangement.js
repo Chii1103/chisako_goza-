@@ -91,11 +91,7 @@ const flowerArray = [
   },
 ]
 
-const FlowerArrangement = () => {
-  const [liked, setLiked] = useState(false);
-  const toggleLike = () => {
-    setLiked(!liked);
-  };
+
 
   // function toggleLike() {
   //   var likeButton = document.querySelector('.like-button');
@@ -125,6 +121,11 @@ const FlowerArrangement = () => {
 
 
   const FlowerArrangement = () => {
+
+    const [liked, setLiked] = useState(false);
+    const toggleLike = () => {
+      setLiked(!liked);
+    }
     return <>
       <div className='section-wrap' id="flowerTop">
         <div className="titleWrap">
@@ -138,7 +139,7 @@ const FlowerArrangement = () => {
       </div>
     </>
   }
-}
+
 export default FlowerArrangement
 
 

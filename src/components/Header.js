@@ -21,6 +21,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
         </ul>
       </nav>
       <div className="menuIcon" onClick={toggleMenu}><RxHamburgerMenu /></div>
+    
     </div>
   )
 }

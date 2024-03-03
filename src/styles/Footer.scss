@@ -8,23 +8,13 @@
   // padding: 0 3rem;
 
 
-
-.FooterLogo{
-  cursor: pointer;
-  padding: 0 10px;
-
-  &:active {
-    transform: scale(0.95); 
-    opacity: 0.8; 
-  }
-}
-
 .FooterComponent{
   .FooterNav {
     display: flex;
     gap: 6rem;
     padding-left: 7rem;
-    
+    font-size: var(--font-size-XL);
+    list-style-type: none;
     a {
       .FooterNavOption{
         &:active {

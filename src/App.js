@@ -8,7 +8,7 @@ import FlowerArrangement from './components/FlowerArrangement';
 import ContactContainer from './components/ContactContainer';
 import Footer from './components/Footer';
 
-
+import './styles/Global.scss';
 import './styles/Common.scss';
 import './styles/Header.scss';
 import './styles/Main.scss';
@@ -18,7 +18,6 @@ import './styles/WorksContainer.scss';
 import './styles/AboutContainer.scss';
 import './styles/FlowerArrangement.scss';
 import './styles/ContactContainer.scss';
-
 import './styles/Footer.scss';
 
 
@@ -60,8 +59,8 @@ const App = () => {
       <AboutContainer />
       <WorksContainer />
       {/* <Card title={'Flowers'} body={['Himawari', 'others']}/> */}
-      <FlowerArrangement />
-      <ContactContainer />
+      {/* <FlowerArrangement />
+      <ContactContainer /> */}
       <Footer />
     </div>
   );

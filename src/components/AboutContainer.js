@@ -25,7 +25,7 @@ const aboutArray = [
 
 
 const AboutCard = ({ aboutTitle, aboutImg }) => (
-  <div className="aboutContainer-wrap" id="about" >
+  <div className="aboutContainer-wrap section" id="about" >
     <h3 className="aboutTitle">{aboutTitle}</h3>
     <div className="aboutImg" >{aboutImg}</div>
   </div>

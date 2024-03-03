@@ -3,7 +3,7 @@
 function Footer() {
   return (
     <div className='Footer-wrap'>
-     <a href="#"><img className="FooterLogo" src="/images/logo_cg.png" alt="logo" /></a>
+
       <nav className='FooterComponent'>
         <ul className='FooterNav' >
          <a href="#about"> <li className='FooterNavOption'>About</li></a>

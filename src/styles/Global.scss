@@ -1,0 +1,54 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: auto;
+  height: auto;
+  // overflow-x: hidden;
+
+ /*--------------custom scrollbar----------------*/
+ ::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#edaccfba, #e96196);
+  border-radius: 10px;
+}
+}
+
+body{
+///////////////////////////////////////////// 
+ //----------font-size---------------------//
+ ///////////////////////////////////////////// 
+--font-size-XS:13px;
+--font-size-S:14px;
+--font-size-M:16px;
+--font-size-L:18px;
+--font-size-XL:20px;
+
+ ///////////////////////////////////////////// 
+ //----------font-color---------------------//
+ ///////////////////////////////////////////// 
+ --primary-color: #52aaea;
+ --secondary-color: #fff4f4;
+ --pink-color: rgb(255, 183, 195);
+ --black-color: #101010;
+
+ ///////////////////////////////////////////// 
+//----------font-family---------------------//
+///////////////////////////////////////////// 
+ --primary-font-family: "Italiana", sans-serif;
+
+
+}
+
+
+.section{
+  width: 75%;
+  height: auto;
+}

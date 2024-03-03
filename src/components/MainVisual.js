@@ -22,7 +22,19 @@ const MainVisual =()=> {
       <img className="mvSakuraS2" src="/images/sakuraS.png" />
       
       <div className="mvInner">
-        <div className="mv-left">
+
+      <div className="mv-top">
+          I am a front end  developer from Kyoto, Japan,
+          currently based in New York , USA.
+        </div>
+
+
+        <div className='mv-center'>
+          <img className="mv-me" src="/images/mainVisual.png" />
+        </div>
+
+        
+        <div className="mv-bottom">
           <div className="icons-links-wrap">
            <a href="https://github.com/Chii1103" target="_blank" rel="noopener noreferrer"> 
            <img className='links-img' src="/images/github.png" />
@@ -36,16 +48,9 @@ const MainVisual =()=> {
           </div>
         </div>
 
-        <div className='mv-center'>
+       
 
-          {/* <h2 className='mv-h2'>Thank you so much for visiting！</h2> */}
-          <img className="mv-me" src="/images/mainVisual.png" />
-
-        </div>
-        <div className="mv-right">
-          I am a front end  developer from Kyoto, Japan,
-          currently based in New York , USA.
-        </div>
+     
 
 
       </div>
