@@ -4,7 +4,8 @@ import AboutContainer from './components/AboutContainer';
 import Card from './components/Card';
 import WorksContainer from './components/WorksContainer';
 
-import FlowerArrangement from './components/FlowerArrangement';
+import TestFlowerArrangement from './components/TestFlowerArrangement';
+// import FlowerArrangement from './components/FlowerArrangement';
 import ContactContainer from './components/ContactContainer';
 import Footer from './components/Footer';
 
@@ -16,7 +17,8 @@ import './styles/Card.scss';
 import './styles/Square.scss';
 import './styles/WorksContainer.scss';
 import './styles/AboutContainer.scss';
-import './styles/FlowerArrangement.scss';
+// import './styles/FlowerArrangement.scss';
+import './styles/TestFlowerArrangement.scss';
 import './styles/ContactContainer.scss';
 import './styles/Footer.scss';
 
@@ -58,12 +60,13 @@ const App = () => {
 
       <AboutContainer />
       <WorksContainer />
-      {/* <Card title={'Flowers'} body={['Himawari', 'others']}/> */}
-      {/* <FlowerArrangement />
-      <ContactContainer /> */}
+      <TestFlowerArrangement/>
+      {/* <ContactContainer /> */}
       <Footer />
     </div>
   );
 }
 
 export default App;
+
+// items={mockItems}

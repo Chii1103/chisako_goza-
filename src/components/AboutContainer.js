@@ -76,13 +76,13 @@ const AboutContainer = () => {
       <img className="titleSakura" src="../images/sakuraS.png"/>
       <a id="aboutLink"   className="section-title">About</a>
     </div>
-    <div className="aboutContainer">
+    <div className="aboutContainer sectionInner">
       {aboutArray.map((about, idx) => <AboutCard key={idx} {...about} />)}
     </div>
     {/* <div className="skillContainer">
     {skillArray.map((skill, idx) => <SkillCard key={idx} {...skill} />)}
     </div> */}
-    <div className="skill-graph">
+    <div className="skill-graph sectionInner">
       {skills.map((skill, index) => (
         <SkillBar key={index} skill={skill.skill} percentage={skill.percentage} />
       ))}

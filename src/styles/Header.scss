@@ -7,10 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:.9rem 0;
+  // padding: 0.9rem 0;
   background: linear-gradient(45deg, #aef3ffe0, #558eff);
   background-position: top bottom;
-
+  scrollbar-width: none;
   .HeaderLogo {
     width: 80%;
     height: auto;
@@ -48,19 +48,17 @@
   }
 }
 
-
 ///////////////
- /* tablet */
+/* tablet */
 ///////////////
 @media screen and (max-width: 959px) {
   .HeaderContainer {
     height: 59px;
 
-     .HeaderLogo {
+    .HeaderLogo {
       width: 70%;
       height: auto;
-  }
-    
+    }
 
     .menuIcon {
       display: block;
@@ -82,11 +80,11 @@
 ///////////////
 @media screen and (max-width: 599px) {
   .HeaderContainer {
-      height: 36px;
+    height: 36px;
     .HeaderLogo {
       width: 60%;
       height: auto;
-  }
+    }
 
     .menuIcon {
       display: block;
@@ -103,5 +101,3 @@
     }
   }
 }
-
-

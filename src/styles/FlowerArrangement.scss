@@ -1,237 +1,237 @@
-.section-wrap {
-  // width: 100%;
-  margin: 0 auto;
-  // padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(270deg, #aef3ffe0, #558eff);
-  font-family: var(--primary-font-family);
-  // padding: 3rem;
-
-  .flowerContainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3%;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-
-
-
+.flowerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-auto-rows: 550px;//height
+  gap: 30px;
     .flowerContainer-wrap {
-      width: 26%;
-      height: auto;
-      background: #fff;
-      // min-height: 530px;
-      margin: 10px;
-      border-radius: 1rem;
-      display: flex;
-      flex-direction: column;
-      // justify-content: space-between;
-      align-items: center;
-
-      &:hover {
-        opacity: .85;
-      }
-
-      .iconWrap {
-        display: flex;
-        align-items: center;
-        margin: 1rem;
-        gap: .3rem;
-
-        .iconImg {
-          width: 15%;
-          height: auto;
-          border-radius: 50%;
-          aspect-ratio: 1/1;
-        }
-
-        .iconName {
-          font-size: 13px;
-        }
-
-      }
-
       .flowerImg {
-        width: 80%;
-        height: auto;
-        margin-top: 1rem;
-        max-height: 314.55px;
-        max-width: 270px;
+        border-radius: 4%;
+        object-fit: cover;
       }
-
-      .flowerButtons {
-        display: flex;
-        justify-content: space-between;
-        gap: 8rem;
-        align-items: center;
-        font-size: 31px;
-        margin: 1rem auto;
-
-        .flowerLeftButtons {
-          display: flex;
-          justify-content:flex-start;
-          align-items: center;
-        }
-      }
-
     }
-
-
-
-  }
-
-
-
-  .titleWrap {
-    display: flex;
-
-    .titleSakura {
-      width: 22%;
-      height: auto;
-
-
-    }
-
-    .section-title {
-      font-size: 36px;
-    }
-  }
-
-  .flowerPics {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 18%;
-    padding: 3rem 1rem;
-    gap: 0.9%;
-
-
-    .frame {
-      background: #fff;
-      border-radius: 24px;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-      margin: 100px auto;
-      padding: 20px 14px 40px;
-      max-width: 33%;
-      width: 100%;
-      min-height: 600px;
-      font-size: 14px;
-
-      .picHead {
-        display: flex;
-        // flex-direction: column;
-        padding: .5rem;
-        justify-content: flex-start;
-        align-items: center;
-
-        .picIcon img {
-          width: 30%;
-          height: auto;
-          border-radius: 50%;
-          aspect-ratio: 1/1;
-        }
-      }
-
-    }
-
-    .flowerPic {
-      width: 80%;
-      height: auto;
-      padding: 1% 0 0 0;
-      animation-name: fadeUpAnime;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
-      opacity: 0;
-
-    }
-
-
-  }
-
-  @keyframes fadeUpAnime {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .flowerBottom {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin: 1rem auto;
-
-    .igLogo {
-      font-size: 33px;
-    }
-  }
-
-  .flowerComment {
-    margin: 2.5rem auto;
-  }
-
-  .flower-instagram {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 31px;
-    gap: 1rem;
-  }
-
+  
 }
 
-.liked {
-  color: red;
-  background-color: red;
-}
+// .section-wrap {
+//   // width: 1                               00%;
+//   margin: 0 auto;
+//   // padding: 2rem;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   background: linear-gradient(270deg, #aef3ffe0, #558eff);
+//   font-family: var(--primary-font-family);
+//   // padding: 3rem;
 
-/*smartphone */
-@media screen and (max-width: 599px) {
+//   .flowerContainer {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 3%;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 3rem;
 
-  .section-wrap {
-    .flowerContainer {
-      flex-wrap: nowrap;
-      flex-direction: column;
+//     .flowerContainer-wrap {
+//       width: 26%;
+//       height: auto;
+//       background: #fff;
+//       // min-height: 530px;
+//       margin: 10px;
+//       border-radius: 1rem;
+//       display: flex;
+//       flex-direction: column;
+//       // justify-content: space-between;
+//       align-items: center;
 
-      .flowerContainer-wrap {
-        width: 60%;
-      }
-    }
-  }
+//       &:hover {
+//         opacity: .85;
+//       }
 
+//       .iconWrap {
+//         display: flex;
+//         align-items: center;
+//         margin: 1rem;
+//         gap: .3rem;
 
+//         .iconImg {
+//           width: 15%;
+//           height: auto;
+//           border-radius: 50%;
+//           aspect-ratio: 1/1;
+//         }
 
-}
+//         .iconName {
+//           font-size: 13px;
+//         }
 
+//       }
 
+//       .flowerImg {
+//         width: 80%;
+//         height: auto;
+//         margin-top: 1rem;
+//         max-height: 314.55px;
+//         max-width: 270px;
+//       }
 
+//       .flowerButtons {
+//         display: flex;
+//         justify-content: space-between;
+//         gap: 8rem;
+//         align-items: center;
+//         font-size: 31px;
+//         margin: 1rem auto;
 
-/* tablet */
-@media screen and (min-width: 600px) and (max-width: 959px) {
+//         .flowerLeftButtons {
+//           display: flex;
+//           justify-content:flex-start;
+//           align-items: center;
+//         }
+//       }
 
-  .section-wrap {
-    .flowerContainer {
-      .flowerContainer-wrap {
-        max-height: 383.69px;
-        min-width: 229px;
-        .flowerButtons {
-          font-size: 11px;
-        }
+//     }
 
-        .flowerImg {
-          max-height: 244.36px;
-          height: auto;
-        }
-      }
+//   }
 
-    }
-  }
-}
+//   .titleWrap {
+//     display: flex;
+
+//     .titleSakura {
+//       width: 22%;
+//       height: auto;
+
+//     }
+
+//     .section-title {
+//       font-size: 36px;
+//     }
+//   }
+
+//   .flowerPics {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0 18%;
+//     padding: 3rem 1rem;
+//     gap: 0.9%;
+
+//     .frame {
+//       background: #fff;
+//       border-radius: 24px;
+//       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+//       margin: 100px auto;
+//       padding: 20px 14px 40px;
+//       max-width: 33%;
+//       width: 100%;
+//       min-height: 600px;
+//       font-size: 14px;
+
+//       .picHead {
+//         display: flex;
+//         // flex-direction: column;
+//         padding: .5rem;
+//         justify-content: flex-start;
+//         align-items: center;
+
+//         .picIcon img {
+//           width: 30%;
+//           height: auto;
+//           border-radius: 50%;
+//           aspect-ratio: 1/1;
+//         }
+//       }
+
+//     }
+
+//     .flowerPic {
+//       width: 80%;
+//       height: auto;
+//       padding: 1% 0 0 0;
+//       animation-name: fadeUpAnime;
+//       animation-duration: 0.5s;
+//       animation-fill-mode: forwards;
+//       opacity: 0;
+
+//     }
+
+//   }
+
+//   @keyframes fadeUpAnime {
+//     from {
+//       opacity: 0;
+//       transform: translateY(10px);
+//     }
+
+//     to {
+//       opacity: 1;
+//       transform: translateY(0);
+//     }
+//   }
+
+//   .flowerBottom {
+//     display: flex;
+//     align-items: center;
+//     gap: 30px;
+//     margin: 1rem auto;
+
+//     .igLogo {
+//       font-size: 33px;
+//     }
+//   }
+
+//   .flowerComment {
+//     margin: 2.5rem auto;
+//   }
+
+//   .flower-instagram {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 31px;
+//     gap: 1rem;
+//   }
+
+// }
+
+// .liked {
+//   color: red;
+//   background-color: red;
+// }
+
+// /*smartphone */
+// @media screen and (max-width: 599px) {
+
+//   .section-wrap {
+//     .flowerContainer {
+//       flex-wrap: nowrap;
+//       flex-direction: column;
+
+//       .flowerContainer-wrap {
+//         width: 60%;
+//       }
+//     }
+//   }
+
+// }
+
+// /* tablet */
+// @media screen and (min-width: 600px) and (max-width: 959px) {
+
+//   .section-wrap {
+//     .flowerContainer {
+//       .flowerContainer-wrap {
+//         max-height: 383.69px;
+//         min-width: 229px;
+//         .flowerButtons {
+//           font-size: 11px;
+//         }
+
+//         .flowerImg {
+//           max-height: 244.36px;
+//           height: auto;
+//         }
+//       }
+
+//     }
+//   }
+// }

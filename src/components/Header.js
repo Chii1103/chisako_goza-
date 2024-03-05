@@ -14,11 +14,11 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
      <a href="#"> <img className='HeaderComponent HeaderLogo' src="/images/logo_cg.png" alt="logo" /> </a>
      
       <nav className={`HeaderComponent ${isMenuOpen ? 'open' : ''}`}>
-        <ul className='HeaderNav'>
-         <li className='HeaderNavOption' id="about"> About</li> 
-          <li className='HeaderNavOption' id="projectsTop" > Projects</li> 
-        <li className='HeaderNavOption' id="contact" >Resume</li> 
-        </ul>
+  
+         <a className='HeaderNavOption' id="about"> About</a> 
+         <a className='HeaderNavOption' id="projectsTop" > Projects</a> 
+         <a className='HeaderNavOption' id="contact" >Resume</a> 
+  
       </nav>
       <div className="menuIcon" onClick={toggleMenu}><RxHamburgerMenu /></div>
     

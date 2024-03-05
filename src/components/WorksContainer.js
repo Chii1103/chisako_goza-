@@ -47,7 +47,7 @@ const worksArray = [
 ];
 
 const WorkCard = ({ workImg, workTitle, workExplanation, gitHub, demo }) => (
-  <div className="workContainer-wrap">
+  <div className="workContainer-wrap ">
     <img className="workImage" src={workImg} />
     <h3 className="workTitle">{workTitle}</h3>
     <div className="workExplanation">{workExplanation}</div>
@@ -77,7 +77,7 @@ const WorksContainer = () => {
         <img className="titleSakura" src="../images/sakuraS.png" />
         <h2 className="section-title">Works</h2>
       </div>
-      <div className="worksContainer">
+      <div className="worksContainer sectionInner">
         {worksArray.map((work, idx) => (
           <WorkCard key={idx} {...work} />
         ))}
