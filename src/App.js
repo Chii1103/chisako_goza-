@@ -1,42 +1,57 @@
-import Header from './components/Header';
-import MainVisual from './components/MainVisual'
-import AboutContainer from './components/AboutContainer';
-import Card from './components/Card';
-import WorksContainer from './components/WorksContainer';
 
-import FlowerArrangement from './components/FlowerArrangement';
-import ContactContainer from './components/ContactContainer';
-import Footer from './components/Footer';
+import HmbTestHeader from "./components/HmbTestHeader";
+import MainVisual from "./components/MainVisual";
+import AboutContainer from "./components/AboutContainer";
+import WorksContainer from "./components/WorksContainer";
+import MasonryLayout from "./components/MasonryLayout";
+// import FlowerArrangement from './components/FlowerArrangement';
+import Footer from "./components/Footer";
 
-import './styles/Header.scss';
-import './styles/Main.scss';
-import './styles/Card.scss';
-import './styles/Square.scss';
-import './styles/WorksContainer.scss';
-import './styles/AboutContainer.scss';
-import './styles/FlowerArrangement.scss';
-import './styles/ContactContainer.scss';
+import "./styles/Global.scss";
+import "./styles/Common.scss";
+// import './styles/Header.scss';
+import "./styles/HmbTest Header .scss";
 
-import './styles/Footer.scss';
+import "./styles/Main.scss";
+import "./styles/Card.scss";
+import "./styles/Square.scss";
+import "./styles/WorksContainer.scss";
+import "./styles/AboutContainer.scss";
+// import './styles/FlowerArrangement.scss';
+import "./styles/TestFlowerArrangement.scss";
+import "./styles/MasonryLayout.scss";
+import "./styles/ContactContainer.scss";
+import "./styles/Footer.scss";
 
+// const images = [
+//   { src: '/images/flower01.jpg', alt: 'Image 1' },
+//   { src: '/images/flower02.jpg', alt: 'Image 2' },
+//   { src: '/images/flower03.jpg', alt: 'Image 3' },
+//   { src: '/images/flower04.jpg', alt: 'Image 4' },
+//   { src: '/images/flower05.jpg', alt: 'Image 5' },
+//   { src: '/images/flower06.jpg', alt: 'Image 6' },
+//   { src: '/images/flower07.jpg', alt: 'Image 7' },
 
-const App = () => {
+// ];
+
+export function Resume() {
   return (
-    <div className="App">
-      <Header />
-      <MainVisual />
-      {/* {sections.map((section, s) =>
-        <Card key={s} title={section.title} body={section.body} />)
-      } */}
-
-      <AboutContainer />
-      <WorksContainer />
-      {/* <Card title={'Flowers'} body={['Himawari', 'others']}/> */}
-      <FlowerArrangement />
-      <ContactContainer />
-      <Footer />
+    <div>
+      <img src="./images/Chisako_Okada_Resume.pdf" width={1000}px/>
     </div>
   );
 }
 
-export default App;
+export function App() {
+  return (
+    <div className="App">
+      <HmbTestHeader />
+      <MainVisual />
+      <AboutContainer />
+      <WorksContainer />
+      <MasonryLayout />
+      {/* <ContactContainer /> */}
+      <Footer />
+    </div>
+  );
+}

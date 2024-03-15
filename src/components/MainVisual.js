@@ -1,33 +1,63 @@
-import { IoLogoGithub } from "react-icons/io";
-import { IoLogoLinkedin } from "react-icons/io5";
-import { FaInstagram } from "react-icons/fa6";
-import Links from "../static/links"
+// const mvH1 = document.querySelector ('.mv-h1');
 
-function MainVisual() {
+// const keyframes = {
+//   opacity:[0,1],
+//   translate:['0 50px',0],
+// };
+
+// const options = {
+//   duration: 3000,
+//   easing:'ease',
+// };
+
+// mvH1.animate(keyframes,options);
+
+const MainVisual =()=> {
   return (
-    <div className="mainVisual-wrap">
-      <div className="mv-left">
-        <div className="icons-links-wrap">
-          <a className='links-img' href={Links.GITHUB} target="_blank"><IoLogoGithub /></a>
-          {/* <img className='links-img' src="/images/github.png" /> */}
-          <a className='links-img' href={Links.LINKEDIN} target="_blank"><IoLogoLinkedin /></a>
-          {/* <img className='links-img' src="/images/linkedin.png" /> */}
-          <a className='links-img' href={Links.INSTAGRAM} target="_blank"><FaInstagram /></a>
-          {/* <img className='links-img' src="/images/instagram.png" /> */}
+
+    <div className="mainVisual-wrap" id="top">
+      <h1 className='mv-h1'>Hello, I am Chisako Goza </h1>
+
+      <img className="mvSakuraS1" src="/images/sakuraS.png" />
+      <img className="mvSakuraS2" src="/images/sakuraS.png" />
+      
+      <div className="mvInner">
+
+      <div className="mv-top">
+          I am a front end  developer from Kyoto, Japan,
+          currently based in New York, USA.
         </div>
-      </div>
-      <div className='mv-center'>
-        <h1 className='mv-h1'>Hello, I am Chisako Goza </h1>
-        <h2 className='mv-h2'>Thank you so much for visiting！</h2>
-        <img className="mv-me" src="/images/mainVisual.png" />
-      </div>
-      <div className='mv-right'>
-        <p className='mv-p'>
-          I am a front end  developer from Kyoto, Japan, currently based in New York , USA.
-        </p>
-        {/* <button className='btn-view'>View my works</button> */}
+
+
+        <div className='mv-center'>
+          <div className="me-wrap">
+          <img className="mv-me" src="/images/mainVisual.png" />
+          </div>
+        </div>
+
+        
+        <div className="mv-bottom">
+          <div className="icons-links-wrap">
+           <a href="https://github.com/Chii1103" target="_blank" rel="noopener noreferrer"> 
+           <img className='links-img' src="/images/github.png" />
+           </a>
+           <a href="https://www.linkedin.com/in/chisako-goza-547411259/" target="_blank" rel="noopener noreferrer"> 
+            <img className='links-img' src="/images/linkedin.png" />
+            </a>
+            <a href="https://www.instagram.com/rosasdechisako/" target="_blank" rel="noopener noreferrer"> 
+            <img className='links-img' src="/images/instagram.png" />
+            </a>
+          </div>
+        </div>
+
+       
+
+     
+
+
       </div>
 
+      <img className="mvSakuraM" src="/images/sakuraM.png" />
 
     </div>
   );

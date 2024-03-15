@@ -1,113 +1,187 @@
-@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&display=swap');
+// .App {
 
-* {
-  padding: 0;
-  margin: 0;
-  // font-family: 'Poppins', sans-serif;
-  max-width: 1920px;
-  height: auto;
-  overflow-x: hidden;
-  --primary-color: #2FC4B2;
-  --secondary-color: #F5FFF4;
-  --tertiary-color: #FA8072;
-  --pink-color: pink;
-
-  --header-height: 60px;
-
-  --font-family-main: 'Josefin Sans', sans-serif;
-  
-}
+// }
 
 
 .mainVisual-wrap {
-  background-color: var(--primary-color);
-  margin: var(--header-height) auto 0;
-  padding: 0 4rem 2rem 4rem;
-  
-  min-height: calc(100vh - var(--header-height));
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  // flex-direction: column;
+  background-image: url(../../public/images/bgImg.jpg);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  background-position: center center;
+  background-size: cover;
+  /* margin: auto; */
+  /* padding: 4rem 0 4rem; */
+  font-family: var(--primary-font-family);
+  position: relative;
+  padding: 6% 0 0 0;
 
-  .mv-left{
-    .icons-links-wrap{
+  .mvSakuraS1 {
+    width: 3%;
+    height: auto;
+    position: absolute;
+    top: 36%;
+    right: 20%;
+    animation: fall 4s linear infinite,
+      rotate1 3s ease-in-out infinite alternate;
+  }
+
+  .mvSakuraS2 {
+    width: 4%;
+    height: auto;
+    position: absolute;
+    top: 13%;
+    right: 19%;
+    animation: fall 4s ease-in infinite,
+      rotate1 6s ease-in-out infinite alternate;
+  }
+
+  .mvSakuraM {
+    width: 6%;
+    height: auto;
+    position: absolute;
+    bottom: 26%;
+    left: 15%;
+    animation: fall 4s ease-in-out infinite,
+      rotate1 5s ease-in-out infinite alternate;
+  }
+
+  .mv-h1 {
+    // font-family: 'Just Me Again Down Here', cursive;
+    color: var(--black-color);
+    text-align: center;
+    margin: 1% auto ;
+    display: block;
+    font-size: 67px;
+    font-weight: 550;
+    // animation: typing 6.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    margin: 0 auto;
+    // typing animation try area
+    width: 24ch;
+    animation: typing 3s steps(24), effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    border-right: 3px solid;
+
+    // typing animation try area
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes effect {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes rotate1 {
+    from {
+      transform: translateX(0px) rotate(0deg);
+    }
+
+    to {
+      transform: translateX(200px) translateY(3px) rotate(-80deg)
+        rotateX(180deg);
+    }
+  }
+
+  @keyframes rotate2 {
+    from {
+      transform: translateX(200px) rotate(-45deg);
+    }
+
+    to {
+      transform: translateX(0px) rotate(0deg);
+    }
+  }
+
+  @keyframes slide-right {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      // transform: translateX(calc(50% - (1920px / 2)));
+      transform: translateX(100%);
+    }
+  }
+
+  // @keyframes slide-right {
+  //   0% {
+  //     -webkit-transform: translateY(0) translateX(0);
+  //             transform: translateY(0) translateX(0);
+  //   }
+  //   100% {
+  //     -webkit-transform: translateY(50%) translateX(50%);
+  //             transform: translateY(50%) translateX(50%);
+  //   }
+  // }
+
+  .mvInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10%;
+    margin: 3% 0 0 0;
+    .mv-top {
+      font-size: 19px;
+      font-weight: 600;
+      margin: 0 auto 24px;
+      // padding-left: 3rem;
+      line-height: 3rem;
+      margin-bottom: 24px;
+      letter-spacing: 0.2rem;
+      text-align: center;
+    }
+
+    .mv-center {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      // align-items: space-between;
+      align-items: center;
+      // margin-left: 13rem;
+      gap: 1rem;
+      // margin-bottom: 6rem;
+      width: 36%;
 
-      .links-img {
-        padding: 40% 0;
-        max-width: 66px;
-        font-size: 66px;
-        cursor: pointer;
-        color: black
+      .me-wrap{
+        box-shadow: 0 0 13px #fff;
+      }
+
+      .mv-me {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        filter: brightness(1.1);
       }
     }
 
-    
+    .mv-bottom {
+      padding: 2rem 0;
+      .icons-links-wrap {
+        display: flex;
+        gap: 1.2rem;
+      }
+
+      .links-img {
+        max-width: 33px;
+        max-height: 33px;
+      }
+
+      .links-img:hover {
+        opacity: 0.6;
+      }
+    }
   }
-
-  .mv-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 13rem;
-    gap: 1rem;
-    margin-bottom: 6rem;
-
-    font-family: 'Just Me Again Down Here', cursive;
-    color: #fff;
-    text-align: center;
-    
-    .mv-h1 {
-      font-size: 67px;
-    }
-    .mv-h2 {
-      font-size: 33px;
-    }
-
-    .mv-me {
-      max-width: 600px;
-      height: auto;
-    }
-
-  }
-
-  .mv-right {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 350px;
-
-    .mv-p {
-      font-family: var(--font-family-main);
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 3rem;
-    }
-
-    .btn-view {
-      width: 183px;
-      height: 82px;
-      background-color: #F5FFF4;
-      color: #2C2929;
-      // position: absolute;
-      // bottom: 23%;
-      // left: 50%;
-      // transform: translate(-50%, -50%);
-    }
-  }  
 }
-
 
 //Footer
 
 .footer {
-  background-color: #2FC4B2;
+  background-color: #2fc4b2;
   display: flex;
   justify-content: flex-start;
   gap: 25%;
@@ -116,9 +190,79 @@
   padding: 0 4rem 2rem 4rem;
 }
 
-.section{
+.section {
   width: 100%;
   display: flex;
   padding: 20px 0;
 }
 
+//////////////
+/* tablet */
+//////////////
+@media screen and (max-width: 959px) {
+  .mainVisual-wrap {
+    height: auto;
+    .mv-h1 {
+      margin: 3rem auto 3rem auto;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .mvInner {
+      display: flex;
+      // width: 100%;
+      // padding: 3rem;
+      margin: 0 auto;
+      flex-direction: column;
+      .mv-top {
+        margin: 0 auto 24px;
+        // padding-left: 3rem;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: 0.2rem;
+      }
+
+    
+      .mv-bottom {
+        width: 100%;
+        .icons-links-wrap {
+          flex-direction: row;
+          justify-content: center;
+          margin-bottom: 24px;
+          .links-img {
+            width: 33px;
+          }
+        }
+      }
+    }
+  }
+
+  /*--------------custom scrollbar----------------*/
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*smartphone */
+@media screen and (max-width: 599px) {
+  .mainVisual-wrap {
+    .mv-h1 {
+      padding: 1rem;
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .mvInner {
+      padding: 0 3%;
+
+      .mv-top {
+        font-size: var(--font-size-XS);
+        width: 88%;
+        // margin: 0 auto 24px;
+        padding-left: 0;
+      }
+
+    }
+  }
+}

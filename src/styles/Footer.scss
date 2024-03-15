@@ -1,26 +1,89 @@
 .Footer-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: var(--primary-color);
-  padding: 0 3rem;
+  justify-content: space-evenly;
+  background: linear-gradient(45deg, #aef3ffe0, #558eff);
+  height: 50px;
+  // padding: 1rem 0;
+  scrollbar-width: none;
+  // background-image: url('../../public/images/bgImg.jpg');
+  // background-position: center center;
+  // padding: 0 3rem;
+
+  .FooterComponent {
+    .FooterNav {
+      display: flex;
+      gap: 6rem;
+      padding-left: 7rem;
+      font-size: var(--font-size-XL);
+      list-style-type: none;
+      a {
+        .FooterNavOption {
+          &:active {
+            transform: scale(0.95);
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  .Footer-icons-links-wrap {
+    display: flex;
+    gap: 1rem;
+    padding-right: 0.3rem;
+
+    .Footer-links-img {
+      max-width: 33px;
+      max-height: 33px;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
 }
 
-.FooterNav {
-  display: flex;
-  gap: 6rem;
-  padding-left: 7rem;
+/* tablet */
+@media screen and  (max-width: 959px) {
+  .Footer-wrap {
+    height: 46px;
+    .Footer-icons-links-wrap {
+      gap: 0.3rem;
+      .Footer-links-img {
+        width: 30px;
+        height: auto;
+      }
+    }
+    .FooterComponent .FooterNav {
+      padding-left: 0rem;
+      gap: 2rem;
+      .FooterNavOption{
+        font-size: var(--font-size-M);
+      }
+    }
+  }
 }
 
-
-
-.Footer-icons-links-wrap {
-  display: flex;
-  gap: 1rem;
-}
-
-.Footer-links-img {
-  max-width: 33px;
-  max-height: 33px;
-
+/*smartphone */
+@media screen and (max-width: 599px) {
+  .Footer-wrap {
+    // height: 24px;
+    display: none;
+    .Footer-icons-links-wrap {
+      gap: 0.3rem;
+      .Footer-links-img {
+        width: 15px;
+        height: auto;
+      }
+    }
+    .FooterComponent {
+      .FooterNav {
+        gap: 1.6rem;
+        padding: 0;
+        .FooterNavOption{
+          font-size: var(--font-size-S);
+        }
+      }
+    }
+  }
 }
