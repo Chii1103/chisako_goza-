@@ -11,11 +11,19 @@
 
 .section-title {
   margin-bottom: 1rem;
- font-size: 33px;
- margin: 1rem 0;
+  margin: 3rem 0 1rem;
  font-size: 43px;
+ font-family: var( --primary-font-family);
+ font-weight: normal;
 }
 
 .section-body {
   display: flex;
 }
+
+// /*smartphone */
+// @media screen and (max-width: 599px) {
+//   margin: none;
+//   font-size: var(--font-size-M);
+// font-weight: bold;
+// }

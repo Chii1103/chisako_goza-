@@ -5,21 +5,21 @@ const worksArray = [
   {
     workImg: "/images/law.jpg",
     workTitle: "Lawoffice website",
-    workExplanation: "this is the website for law office in Oklahoma.",
+    workExplanation: "Coming soon!",
     github: "https://github.com/Chii1103/1029law-office",
     // demo: null
   },
   {
     workImg: "/images/dentist.jpg",
     workTitle: "Dentist website",
-    workExplanation: "this is the website for law office in Japan.",
+    workExplanation: "Coming soon!.",
     // gitHub:'',
     //   demo:'',
   },
   {
     workImg: "/images/abagauss.jpg",
     workTitle: "Abagauss",
-    workExplanation: "I will collaborate this project with Sanket Jain.",
+    workExplanation: "Coming soon!.",
     // gitHub:'',
     //   demo:'',
   },

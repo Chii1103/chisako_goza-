@@ -1,60 +1,60 @@
-.masonry-wrap{
-  background: rgb(83, 83, 249);
-  // display: grid;
-  // grid-template-columns: repeat(3, (20px, 1fr));
-  // gap: 10px;
-}
-
-.masonry-layout{
-  // display: flex;
-  // flex-wrap: wrap;
-  // columns: 5;
-  column-gap: 9px;
-  // column-fill: balance;
-
-  column-count: 5;
-
-  //////////////
-  /// grid/////
-  /// /////////
-  // display: grid;
-  // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  // gap: 10px;
-
-
-
-  // display: inline-grid;
-  // grid: masonry/repeat (3,2ch);
-  // border: 1px solid;
-  // masonry-auto-flow: next;
-}
-
-
-.masonry-item{
-  // width: auto;
-  // object-fit: contain;
-  break-inside: avoid;
-  // margin-bottom: 30px;
-
-  // break-inside: avoid;
-  // margin-bottom: 1em;
-  // border-radius: 20px;
-  // box-sizing: border-box;
-  // width: 300px;
-}
-
-// @media (mid-width:1200px) {
-//   .masonry-layout{
-//     column-count: 6;
-//   }
+// .masonry-wrap{
+//   background: rgb(83, 83, 249);
+//   // display: grid;
+//   // grid-template-columns: repeat(3, (20px, 1fr));
+//   // gap: 10px;
 // }
-// @media (mid-width:959px) {
-//   .masonry-layout{
-//     column-count: 4;
-//   }
+
+// .masonry-layout{
+//   // display: flex;
+//   // flex-wrap: wrap;
+//   // columns: 5;
+//   column-gap: 9px;
+//   // column-fill: balance;
+
+//   column-count: 5;
+
+//   //////////////
+//   /// grid/////
+//   // / /////////
+//   // display: grid;
+//   // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+//   // gap: 10px;
+
+
+
+//   // display: inline-grid;
+//   // grid: masonry/repeat (3,2ch);
+//   // border: 1px solid;
+//   // masonry-auto-flow: next;
 // }
-// @media (mid-width:599px) {
-//   .masonry-layout{
-//     column-count: 3;
-//   }
+
+
+// .masonry-item{
+//   // width: auto;
+//   // object-fit: contain;
+//   break-inside: avoid;
+//   // margin-bottom: 30px;
+
+//   // break-inside: avoid;
+//   // margin-bottom: 1em;
+//   // border-radius: 20px;
+//   // box-sizing: border-box;
+//   // width: 300px;
 // }
+
+// // @media (mid-width:1200px) {
+// //   .masonry-layout{
+// //     column-count: 6;
+// //   }
+// // }
+// // @media (mid-width:959px) {
+// //   .masonry-layout{
+// //     column-count: 4;
+// //   }
+// // }
+// // @media (mid-width:599px) {
+// //   .masonry-layout{
+// //     column-count: 3;
+// //   }
+// // }

@@ -25,12 +25,14 @@ const MainVisual =()=> {
 
       <div className="mv-top">
           I am a front end  developer from Kyoto, Japan,
-          currently based in New York , USA.
+          currently based in New York, USA.
         </div>
 
 
         <div className='mv-center'>
+          <div className="me-wrap">
           <img className="mv-me" src="/images/mainVisual.png" />
+          </div>
         </div>
 
         

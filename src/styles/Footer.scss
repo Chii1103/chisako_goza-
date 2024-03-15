@@ -56,6 +56,7 @@
     }
     .FooterComponent .FooterNav {
       padding-left: 0rem;
+      gap: 2rem;
       .FooterNavOption{
         font-size: var(--font-size-M);
       }
@@ -66,7 +67,8 @@
 /*smartphone */
 @media screen and (max-width: 599px) {
   .Footer-wrap {
-    height: 24px;
+    // height: 24px;
+    display: none;
     .Footer-icons-links-wrap {
       gap: 0.3rem;
       .Footer-links-img {

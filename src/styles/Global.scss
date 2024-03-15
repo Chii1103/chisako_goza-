@@ -1,5 +1,8 @@
 * {
   @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -38,7 +41,8 @@ body{
  ///////////////////////////////////////////// 
  //----------font-color---------------------//
  ///////////////////////////////////////////// 
- --primary-color: #52aaea;
+ --primary-color: #86ccff;
+//  --primary-color: #52aaea;
  --secondary-color: #fff4f4;
  --pink-color: rgb(255, 183, 195);
  --black-color: #101010;
@@ -46,8 +50,8 @@ body{
  ///////////////////////////////////////////// 
 //----------font-family---------------------//
 ///////////////////////////////////////////// 
- --primary-font-family: "Italiana", sans-serif;
-
+ --primary-font-family: "Italiana";
+--mv-font-family:"Caveat"
 
 }
 

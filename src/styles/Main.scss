@@ -146,9 +146,13 @@
       // margin-bottom: 6rem;
       width: 36%;
 
+      .me-wrap{
+        box-shadow: 0 0 13px #fff;
+      }
+
       .mv-me {
-        width: 350px;
-        height: 400px;
+        width: 100%;
+        height:100%;
         object-fit: cover;
         filter: brightness(1.1);
       }
@@ -218,12 +222,7 @@
         letter-spacing: 0.2rem;
       }
 
-      .mv-center {
-        .mv-me {
-          width: 350px;
-          height: 333px;
-        }
-      }
+    
       .mv-bottom {
         width: 100%;
         .icons-links-wrap {
@@ -263,12 +262,6 @@
         padding-left: 0;
       }
 
-      .mv-center {
-        .mv-me {
-          width: 170px;
-          height: 200px;
-        }
-      }
     }
   }
 }

@@ -6,9 +6,11 @@ function Footer() {
 
       <nav className='FooterComponent'>
         <ul className='FooterNav' >
-         <a href="#about"> <li className='FooterNavOption'>About</li></a>
+         <a href="#aboutTop"> <li className='FooterNavOption'>About</li></a>
          <a href="#projectsTop">   <li className='FooterNavOption'>Projects</li></a>
-         <a href="#contact">   <li className='FooterNavOption'>Contact</li></a>
+         <a href="#flowerTop">   <li className='FooterNavOption'>Flower</li></a>
+         <a href="https://drive.google.com/file/d/1hEGyBhbsubcu0OPYKwxugpSj6EgnwRiS/view?usp=sharing">   <li className='FooterNavOption'>Resume</li></a>
+
         </ul>
       </nav>
       <div className="Footer-icons-links-wrap">
