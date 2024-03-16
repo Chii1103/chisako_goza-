@@ -17,19 +17,20 @@ const ToggleButton = ({isOpen, controls, label, onClick }) => {
   );
 };
 
-const Navigation = ({id, isOpen}) => {
+const Navigation = ({id, isOpen, close}) => {
+
+  const closeMenu = e => close(false)
+
   return (
       <div id={id} className={`hmbnavigation${isOpen ? "open" : ""}`}>
-
         <div className='nav-inner'>
           <div className='hmb-a-wrap'>
-        <a className='hmb-a' href="#aboutTop">About</a>
-        <a className='hmb-a' href="#projectsTop">Works</a>
-        <a className='hmb-a' href='#flowerTop'>Flower</a>
-        <a className='hmb-a' href="https://drive.google.com/file/d/1hEGyBhbsubcu0OPYKwxugpSj6EgnwRiS/view?usp=sharing">Resume</a>
-        </div>
+            <a onClick={closeMenu} className='hmb-a' href="#aboutTop">About</a>
+            <a onClick={closeMenu} className='hmb-a' href="#projectsTop">Works</a>
+            <a onClick={closeMenu} className='hmb-a' href='#flowerTop'>Flower</a>
+            <a onClick={closeMenu} target="_blank" className='hmb-a' href="https://drive.google.com/file/d/1hEGyBhbsubcu0OPYKwxugpSj6EgnwRiS/view?usp=sharing">Resume</a>
           </div>
-
+        </div>
       </div >
    
   );
@@ -60,7 +61,7 @@ const HmbTestHeader = () => {
          </div>
 
        <ToggleButton isOpen={isOpen} onClick={toggleFunction} />
-       <Navigation id="navigation" isOpen={isOpen} />
+       <Navigation id="navigation" isOpen={isOpen} close={setIsOpen} />
   
     </header>
   )

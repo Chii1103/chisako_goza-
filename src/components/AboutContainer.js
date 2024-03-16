@@ -2,27 +2,27 @@ import { SlDiamond } from "react-icons/sl";
 import { GiDiscussion } from "react-icons/gi";
 import { GiSunglasses } from "react-icons/gi";
 
-const aboutArray = [
-  {
-    aboutTitle: "Accurate",
-    aboutImg: <SlDiamond />,
-  },
-  {
-    aboutTitle: "Communication",
-    aboutImg: <GiDiscussion />,
-  },
-  {
-    aboutTitle: "Curiosity",
-    aboutImg: <GiSunglasses />,
-  },
-];
+// const aboutArray = [
+//   {
+//     aboutTitle: "Accurate",
+//     aboutImg: <SlDiamond />,
+//   },
+//   {
+//     aboutTitle: "Communication",
+//     aboutImg: <GiDiscussion />,
+//   },
+//   {
+//     aboutTitle: "Curiosity",
+//     aboutImg: <GiSunglasses />,
+//   },
+// ];
 
-const AboutCard = ({ aboutTitle, aboutImg }) => (
-  <div className="aboutContainer-wrap section">
-    <h3 className="aboutTitle">{aboutTitle}</h3>
-    <div className="aboutImg">{aboutImg}</div>
-  </div>
-);
+// const AboutCard = ({ aboutTitle, aboutImg }) => (
+//   <div className="aboutContainer-wrap section">
+//     <h3 className="aboutTitle">{aboutTitle}</h3>
+//     <div className="aboutImg">{aboutImg}</div>
+//   </div>
+// );
 // const SkillCard = ({skillName}) => (
 //   <div className="skillContainer-wrap">
 //     <div className="skillName" >{skillName}</div>
@@ -73,7 +73,7 @@ const AboutContainer = () => {
 
       {/* <div className="aboutFlexWrap"> */}
         <div className="aboutContainer sectionInner">
-          <h2 className="myself">
+          <p className="myself">
             I grew up in rural Japan and spend the first several years of my
             career in a client-facing role as a conference center event
             coordinator in Kyoto. Following the COVID-19 pandemic, I received
@@ -88,7 +88,7 @@ const AboutContainer = () => {
             the country I live in has been difficult, I am proud of the progress
             I have made so far in my professional journey and I am excited to
             continue to build upon my skill set!
-          </h2>
+          </p>
 
           {/* {aboutArray.map((about, idx) => <AboutCard key={idx} {...about} />)} */}
         
