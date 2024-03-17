@@ -33,7 +33,7 @@ const ContactCard = ({ contactTitle, contactImg, contactLink }) => (
 const ContactContainer = () => {
   return <div className="section-wrap contactWrap" >
     <div className="titleWrap">
-      <img className="titleSakura" src="../images/sakuraL.png" />
+      <img className="titleSakura" src="../images/sakuraL.png" alt="sakura" />
       <h2 className="section-title">Contact</h2>
     </div>
     <div className="contactContainer">
@@ -44,7 +44,7 @@ const ContactContainer = () => {
     </div>
     <div className="pageTopWrap">
       <a href="#top" className="textTop">Page Top↑</a>
-      <img className="treeTop" src="../images/treeTop.png" />
+      <img className="treeTop" src="../images/treeTop.png" alt="sakura" />
     </div>
   </div>
 }

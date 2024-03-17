@@ -11,7 +11,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className='HeaderContainer' id="headerTop" >
-     <a href="#"> <img className='HeaderComponent HeaderLogo' src="/images/logo_cg.png" alt="logo" /> </a>
+     <a href="#"> <img className='HeaderComponent HeaderLogo' src="/images/logo_cg.png" alt="logo for Chisako Goza" /> </a>
      
       <nav className={`HeaderComponent ${isMenuOpen ? 'open' : ''}`}>
   

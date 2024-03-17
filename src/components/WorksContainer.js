@@ -12,17 +12,17 @@ const worksArray = [
   {
     workImg: "/images/dentist.jpg",
     workTitle: "Dentist website",
-    workExplanation: "Coming soon!.",
+    workExplanation: "Coming soon!",
     // gitHub:'',
     //   demo:'',
   },
-  {
-    workImg: "/images/abagauss.jpg",
-    workTitle: "Abagauss",
-    workExplanation: "Coming soon!.",
-    // gitHub:'',
-    //   demo:'',
-  },
+  // {
+  //   workImg: "/images/abagauss.jpg",
+  //   workTitle: "Abagauss",
+  //   workExplanation: "Coming soon!",
+  //   // gitHub:'',
+  //   //   demo:'',
+  // },
   {
     workImg: "/images/quiz.jpg",
     workTitle: "Quiz App",
@@ -48,7 +48,7 @@ const worksArray = [
 
 const WorkCard = ({ workImg, workTitle, workExplanation, gitHub, demo }) => (
   <div className="workContainer-wrap ">
-    <img className="workImage" src={workImg} />
+    <img className="workImage" src={workImg} alt="projects image"/>
     <h3 className="workTitle">{workTitle}</h3>
     <div className="workExplanation">{workExplanation}</div>
     <div className="workButtons">
@@ -74,7 +74,7 @@ const WorksContainer = () => {
   return (
     <div className="section-wrap" id="projectsTop">
       <div className="titleWrap">
-        <img className="titleSakura" src="../images/sakuraS.png" />
+        <img className="titleSakura" src="../images/sakuraS.png" alt="sakura"/>
         <h2 className="section-title">Works</h2>
       </div>
       <div className="worksContainer sectionInner">

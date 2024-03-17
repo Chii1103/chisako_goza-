@@ -15,13 +15,13 @@ function Footer() {
       </nav>
       <div className="Footer-icons-links-wrap">
       <a href="https://github.com/Chii1103" target="_blank" rel="noopener noreferrer"> 
-        <img className='Footer-links-img' src="/images/github.png" />
+        <img className='Footer-links-img' src="/images/github.png" alt="github logo"/>
         </a>
         <a href="https://www.linkedin.com/in/chisako-goza-547411259/" target="_blank" rel="noopener noreferrer"> 
-        <img className='Footer-links-img' src="/images/linkedin.png" />
+        <img className='Footer-links-img' src="/images/linkedin.png" alt="linkedin logo" />
         </a>
         <a href="https://www.instagram.com/rosasdechisako/" target="_blank" rel="noopener noreferrer"> 
-        <img className='Footer-links-img' src="/images/instagram.png" />
+        <img className='Footer-links-img' src="/images/instagram.png" alt="instagram logo"/>
         </a>
       </div>
 

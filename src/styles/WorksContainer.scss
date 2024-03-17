@@ -49,8 +49,12 @@
     .workButtons {
       margin: 20px;
       font-size: 25px;
+      color: var(--black);
 
       .workButton {
+        svg{
+          color: var(--black-color);
+        }
         margin: 0 15px;
       }
     }

@@ -40,13 +40,13 @@ import "./styles/Footer.scss";
 
 // ];
 
-export function Resume() {
-  return (
-    <div>
-      <img src="./images/Chisako_Okada_Resume.pdf" width={1000}px/>
-    </div>
-  );
-}
+// export function Resume() {
+//   return (
+//     <div>
+//       <img src="./images/Chisako_Okada_Resume.pdf" width={1000}px/>
+//     </div>
+//   );
+// }
 
 export function App() {
   return (

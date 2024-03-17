@@ -19,6 +19,8 @@
       list-style-type: none;
       a {
         .FooterNavOption {
+          text-decoration: none;
+          color: var(--black-color);
           &:active {
             transform: scale(0.95);
             opacity: 0.8;
