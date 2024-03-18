@@ -13,6 +13,8 @@
   .workContainer-wrap {
     // min-height: 430px;
     margin: 10px;
+    padding: .5rem  ;
+    height: fit-content;
     border-radius: 1rem;
     background: linear-gradient(#fff, #ffd7f1);
 
@@ -25,14 +27,14 @@
       margin: 15px;
       // width: 230px;
       // height: 230px;
-      max-width: 60%;
+      max-width: 80%;
       max-height: 60%;
       width: auto;
       height: auto;
       object-fit: cover;
-      aspect-ratio: 1/1;
-      border: 1px solid black;
-      border-radius: 1rem;
+      // aspect-ratio: 1/1;
+      // border: 1px solid black;
+      // border-radius: 1rem;
     }
 
     .workTitle {

@@ -117,11 +117,11 @@ min-width: 250px;
 
 .skill-name {
   flex: 1;
-  font-size: 24px;
+  font-size: var(--font-size-M);
 }
 
 .bar-container {
-  flex: 3;
+  flex: 1.5 1;
   background-color: #fff;
   height: 20px;
   border-radius: 8px;
@@ -139,7 +139,7 @@ min-width: 250px;
   font-size: 24px;
 }
 
-/*smartphone */
+/*tablet */
 @media screen and (max-width: 959px) {
 
   .aboutContainer {
@@ -157,6 +157,9 @@ min-width: 250px;
       width: 33px;
     }
   }
+}
+.skill-name {
+  font-size: 13px;
 }
 }
 /*smartphone */
@@ -180,6 +183,9 @@ min-width: 250px;
           font-size: 26px;
         }
       }
+    }
+    .skill-name {
+      font-size: var(--font-size-XS);
     }
   }
 }

@@ -3,16 +3,17 @@ import { HiOutlineGlobeAlt } from "react-icons/hi";
 
 const worksArray = [
   {
-    workImg: "/images/law.jpg",
+    workImg: "/images/LawOffice-Macbook.png",
     workTitle: "Lawoffice website",
-    workExplanation: "Coming soon!",
-    github: "https://github.com/Chii1103/1029law-office",
+    workExplanation: "#Coming soon!",
+    gitHub: "https://github.com/Chii1103/Quiz-App",
     // demo: null
   },
   {
-    workImg: "/images/dentist.jpg",
+    workImg: "/images/Mysite-Macbook.png",
     workTitle: "Dentist website",
-    workExplanation: "Coming soon!",
+    workExplanation: "#Coming soon!",
+    gitHub: "https://github.com/Chii1103/Quiz-App",
     // gitHub:'',
     //   demo:'',
   },
@@ -24,23 +25,23 @@ const worksArray = [
   //   //   demo:'',
   // },
   {
-    workImg: "/images/quiz.jpg",
+    workImg: "/images/QuizApp-Macbook.png",
     workTitle: "Quiz App",
-    workExplanation: "Using HTML, CSS and JavaScript",
+    workExplanation: "#JavaScript #API",
     gitHub: "https://github.com/Chii1103/Quiz-App",
     //   demo:'',
   },
   {
-    workImg: "/images/toDo.jpg",
+    workImg: "/images/ToDoList-Macbook.png",
     workTitle: "Todo List App",
-    workExplanation: "Using HTML, CSS and JavaScript",
+    workExplanation: "#JavaScript #API",
     gitHub: "https://github.com/Chii1103/ToDo-App",
     //   demo:'',
   },
   {
-    workImg: "/images/weatherApp.jpg",
+    workImg: "/images/WeatherApp-Macbook.png",
     workTitle: "Weather App",
-    workExplanation: "Using HTML, CSS and JavaScript, API",
+    workExplanation: "#JavaScript #API",
     gitHub: "https://github.com/Chii1103/Weather-App",
     //   demo:'',
   },
