@@ -22,9 +22,18 @@
   display: flex;
 }
 
-// /*smartphone */
-// @media screen and (max-width: 599px) {
-//   margin: none;
-//   font-size: var(--font-size-M);
-// font-weight: bold;
-// }
+
+/*tablet */
+@media screen and (max-width: 959px) {
+  .section-title {
+    font-size: var(--font-size-XXL);
+   }
+}
+
+
+/*smartphone */
+@media screen and (max-width: 599px) {
+  .section-title {
+   font-size: var(--font-size-XL);
+  }
+}

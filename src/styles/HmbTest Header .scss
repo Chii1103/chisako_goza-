@@ -56,7 +56,10 @@
       width: auto;
       .HeaderNavOption {
         margin-right: 1rem;
+        text-decoration: none;
+        color: var(--black-color);
       }
+      
     }
   }
 }

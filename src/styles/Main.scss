@@ -50,12 +50,12 @@
     // font-family: 'Just Me Again Down Here', cursive;
     color: var(--black-color);
     text-align: center;
-    margin: 1% auto ;
+    margin: 1% auto;
     display: block;
     font-size: 67px;
     font-weight: 550;
     // animation: typing 6.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    margin: 0 auto;
+    margin: 3rem auto;
     // typing animation try area
     width: 24ch;
     animation: typing 3s steps(24), effect 0.5s step-end infinite alternate;
@@ -128,7 +128,8 @@
     padding: 0 10%;
     margin: 3% 0 0 0;
     .mv-top {
-      font-size: 19px;
+      font-family: var(--mv-font-family);
+      font-size: var(--font-size-L);
       font-weight: 600;
       margin: 0 auto 24px;
       // padding-left: 3rem;
@@ -147,32 +148,15 @@
       // margin-bottom: 6rem;
       width: 36%;
 
-      .me-wrap{
+      .me-wrap {
         box-shadow: 0 0 13px #fff;
       }
 
       .mv-me {
         width: 100%;
-        height:100%;
+        height: 100%;
         object-fit: cover;
         filter: brightness(1.1);
-      }
-    }
-
-    .mv-bottom {
-      padding: 2rem 0;
-      .icons-links-wrap {
-        display: flex;
-        gap: 1.2rem;
-      }
-
-      .links-img {
-        max-width: 33px;
-        max-height: 33px;
-      }
-
-      .links-img:hover {
-        opacity: 0.6;
       }
     }
   }
@@ -217,23 +201,10 @@
       .mv-top {
         margin: 0 auto 24px;
         // padding-left: 3rem;
-        font-size: 16px;
+        font-size: var(--font-size-M);
         font-weight: 600;
         line-height: 2rem;
         letter-spacing: 0.2rem;
-      }
-
-    
-      .mv-bottom {
-        width: 100%;
-        .icons-links-wrap {
-          flex-direction: row;
-          justify-content: center;
-          margin-bottom: 24px;
-          .links-img {
-            width: 33px;
-          }
-        }
       }
     }
   }
@@ -258,11 +229,9 @@
 
       .mv-top {
         font-size: var(--font-size-XS);
-        width: 88%;
-        // margin: 0 auto 24px;
+        line-height: 1.8rem;
         padding-left: 0;
       }
-
     }
   }
 }

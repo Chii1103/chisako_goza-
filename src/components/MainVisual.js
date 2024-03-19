@@ -31,24 +31,12 @@ const MainVisual =()=> {
 
         <div className='mv-center'>
           <div className="me-wrap">
-          <img className="mv-me" src="/images/mainVisual.png" />
+          <img className="mv-me" src="/images/mainVisual.png" alt="Chisako Goza smiles in NY"/>
           </div>
         </div>
 
         
-        <div className="mv-bottom">
-          <div className="icons-links-wrap">
-           <a href="https://github.com/Chii1103" target="_blank" rel="noopener noreferrer"> 
-           <img className='links-img' src="/images/github.png" />
-           </a>
-           <a href="https://www.linkedin.com/in/chisako-goza-547411259/" target="_blank" rel="noopener noreferrer"> 
-            <img className='links-img' src="/images/linkedin.png" />
-            </a>
-            <a href="https://www.instagram.com/rosasdechisako/" target="_blank" rel="noopener noreferrer"> 
-            <img className='links-img' src="/images/instagram.png" />
-            </a>
-          </div>
-        </div>
+ 
 
        
 
@@ -57,7 +45,7 @@ const MainVisual =()=> {
 
       </div>
 
-      <img className="mvSakuraM" src="/images/sakuraM.png" />
+      <img className="mvSakuraM" src="/images/sakuraM.png"  alt="sakura"/>
 
     </div>
   );

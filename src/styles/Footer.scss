@@ -19,6 +19,8 @@
       list-style-type: none;
       a {
         .FooterNavOption {
+          text-decoration: none;
+          color: var(--black-color);
           &:active {
             transform: scale(0.95);
             opacity: 0.8;
@@ -68,7 +70,7 @@
 @media screen and (max-width: 599px) {
   .Footer-wrap {
     // height: 24px;
-    display: none;
+
     .Footer-icons-links-wrap {
       gap: 0.3rem;
       .Footer-links-img {

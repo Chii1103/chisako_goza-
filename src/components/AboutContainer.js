@@ -1,6 +1,6 @@
-import { SlDiamond } from "react-icons/sl";
-import { GiDiscussion } from "react-icons/gi";
-import { GiSunglasses } from "react-icons/gi";
+// import { SlDiamond } from "react-icons/sl";
+// import { GiDiscussion } from "react-icons/gi";
+// import { GiSunglasses } from "react-icons/gi";
 
 // const aboutArray = [
 //   {
@@ -65,7 +65,7 @@ const AboutContainer = () => {
   return (
     <div className="section-wrap" id="aboutTop">
       <div className="titleWrap">
-        <img className="titleSakura" src="../images/sakuraS.png" />
+        <img className="titleSakura" src="../images/sakuraS.png" alt="sakura"/>
         <a id="aboutLink" className="section-title">
           About Me
         </a>
@@ -105,6 +105,19 @@ const AboutContainer = () => {
             />
           ))}
         </div>
+        </div>
+        <div className="about-sns">
+          <div className="icons-links-wrap">
+           <a href="https://github.com/Chii1103" target="_blank" rel="noopener noreferrer"> 
+           <img className='links-img' src="/images/github.png" alt="github logo"/>
+           </a>
+           <a href="https://www.linkedin.com/in/chisako-goza-547411259/" target="_blank" rel="noopener noreferrer"> 
+            <img className='links-img' src="/images/linkedin.png" alt="linkedin logo" />
+            </a>
+            <a href="https://www.instagram.com/rosasdechisako/" target="_blank" rel="noopener noreferrer"> 
+            <img className='links-img' src="/images/instagram.png"  alt="instagram logo"/>
+            </a>
+          </div>
         </div>
       </div>
     // </div>
