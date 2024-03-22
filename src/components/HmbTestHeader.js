@@ -1,5 +1,8 @@
+import { FaInstagram } from "react-icons/fa";
+import { BiLogoLinkedinSquare } from "react-icons/bi";
+import { GrGithub } from "react-icons/gr";
+
 import React, { useState } from 'react'
-import { Link } from "react-router-dom";
 const ToggleButton = ({isOpen, controls, label, onClick }) => {
   return (
     <button 
@@ -23,13 +26,25 @@ const Navigation = ({id, isOpen, close}) => {
   return (
       <div id={id} className={`hmbnavigation${isOpen ? "open" : ""}`}>
         <div className='nav-inner'>
-          <div className='hmb-a-wrap'>
-        <a onClick={closeMenu} className='hmb-a' href="#aboutTop">About</a>
-        <a onClick={closeMenu}  className='hmb-a' href="#projectsTop">Works</a>
-        <a onClick={closeMenu}  className='hmb-a' href='#flowerTop'>Flower</a>
-        <a onClick={closeMenu} className='hmb-a' href="https://drive.google.com/file/d/1hEGyBhbsubcu0OPYKwxugpSj6EgnwRiS/view?usp=sharing">Resume</a>
+            <div className='hmb-a-wrap'>
+              <a onClick={closeMenu} className='hmb-a' href="#aboutTop">About</a>
+              <a onClick={closeMenu}  className='hmb-a' href="#projectsTop">Works</a>
+              <a onClick={closeMenu}  className='hmb-a' href='#flowerTop'>Flower</a>
+              <a onClick={closeMenu} className='hmb-a' href="https://drive.google.com/file/d/15VULFmG-ORZH1T7A8SmmMfV9LjCD-Ch5/view?usp=sharing">Resume</a>
+            </div>
+
+            <div className="hmb-icons-links-wrap">
+                <a className='Footer-links-img' href="https://www.instagram.com/rosasdechisako/"  aria-label="instagram logo" target="_blank" rel="noopener noreferrer"> 
+                <GrGithub />
+                </a>
+                <a className='Footer-links-img' href="https://www.linkedin.com/in/chisako-goza-547411259/"  aria-label="linkedin logo" target="_blank" rel="noopener noreferrer"> 
+                <BiLogoLinkedinSquare />
+                </a>
+                <a className='Footer-links-img' href="https://github.com/Chii1103" aria-label="github logo" target="_blank" rel="noopener noreferrer"> 
+                <FaInstagram />
+                </a>
+            </div>
         </div>
-          </div>
       </div >
    
   );
@@ -55,8 +70,10 @@ const HmbTestHeader = () => {
            <a className='HeaderNavOption' href="#aboutTop"> About</a> 
            <a className='HeaderNavOption' href="#projectsTop" > Projects</a> 
            <a className='HeaderNavOption' href='#flowerTop'>Flower</a>
-           <a className='HeaderNavOption' href="https://drive.google.com/file/d/1hEGyBhbsubcu0OPYKwxugpSj6EgnwRiS/view?usp=sharing">Resume</a>
+           <a className='HeaderNavOption' href="https://drive.google.com/file/d/15VULFmG-ORZH1T7A8SmmMfV9LjCD-Ch5/view?usp=sharing">Resume</a>
          </nav>
+
+         
          </div>
 
        <ToggleButton isOpen={isOpen} onClick={toggleFunction} />

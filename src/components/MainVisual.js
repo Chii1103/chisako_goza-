@@ -1,17 +1,3 @@
-// const mvH1 = document.querySelector ('.mv-h1');
-
-// const keyframes = {
-//   opacity:[0,1],
-//   translate:['0 50px',0],
-// };
-
-// const options = {
-//   duration: 3000,
-//   easing:'ease',
-// };
-
-// mvH1.animate(keyframes,options);
-
 const MainVisual =()=> {
   return (
 
@@ -36,13 +22,6 @@ const MainVisual =()=> {
         </div>
 
         
- 
-
-       
-
-     
-
-
       </div>
 
       <img className="mvSakuraM" src="/images/sakuraM.png"  alt="sakura"/>

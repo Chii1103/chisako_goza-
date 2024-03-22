@@ -115,6 +115,24 @@
   display: none;
 }
 
+.hmb-icons-links-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 0.3rem;
+ margin-top: 2rem;
+
+  .Footer-links-img {
+    max-width: 33px;
+    max-height: 33px;
+    color: #fff;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
 //////////////
 /* PC */
 //////////////

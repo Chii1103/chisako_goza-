@@ -1,33 +1,10 @@
-// import { SlDiamond } from "react-icons/sl";
-// import { GiDiscussion } from "react-icons/gi";
-// import { GiSunglasses } from "react-icons/gi";
-
-// const aboutArray = [
-//   {
-//     aboutTitle: "Accurate",
-//     aboutImg: <SlDiamond />,
-//   },
-//   {
-//     aboutTitle: "Communication",
-//     aboutImg: <GiDiscussion />,
-//   },
-//   {
-//     aboutTitle: "Curiosity",
-//     aboutImg: <GiSunglasses />,
-//   },
-// ];
-
 const AboutCard = ({ aboutTitle, aboutImg }) => (
   <div className="aboutContainer-wrap section">
     <h3 className="aboutTitle">{aboutTitle}</h3>
     <div className="aboutImg">{aboutImg}</div>
   </div>
 );
-// const SkillCard = ({skillName}) => (
-//   <div className="skillContainer-wrap">
-//     <div className="skillName" >{skillName}</div>
-//   </div>
-// )
+
 
 const getColor = (percentage) => {
   if (percentage >= 90) {
@@ -90,12 +67,6 @@ const AboutContainer = () => {
             continue to build upon my skill set!
           </p>
 
-          {/* {aboutArray.map((about, idx) => <AboutCard key={idx} {...about} />)} */}
-        
-
-        {/* <div className="skillContainer">
-    {skillArray.map((skill, idx) => <SkillCard key={idx} {...skill} />)}
-    </div> */}
         <div className="skill-graph sectionInner">
           {skills.map((skill, index) => (
             <SkillBar
