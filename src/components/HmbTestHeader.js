@@ -5,23 +5,6 @@ import HamburgerButton from './hamburger'
 
 import React, { useState } from 'react'
 
-// const ToggleButton = ({isOpen, controls, label, onClick }) => {
-//   return (
-//     <button 
-//     type='button'
-//     aria-controls={controls}
-//     aria-expanded={isOpen}
-//     aria-label={label}
-//     onClick={onClick}
-//     className='toggleButton'
-//     >
-//       <span className='line-1'></span>
-//       <span className='line-2'></span>
-//       <span className='line-3'></span>
-//     </button>
-//   );
-// };
-
 const Navigation = ({ close }) => {
 	return (
 		<div id="navigation" className={"hmbnavigation"} onClick={close} >
@@ -75,8 +58,3 @@ const HmbTestHeader = () => {
 }
 
 export default HmbTestHeader
-
-
-
-
-
