@@ -9,38 +9,42 @@ const MasonryLayout = () => {
           Flower Arrangement
         </div>
       </div>
-      <div class="masonry-wrap sectionInner">
-        <div class="grid">
+      <div className="masonry-wrap sectionInner">
+        <div className="grid">
           <img src="./images/flower01.jpg" className="masonry-img" alt="flower arrangement by Chisako Goza"/>
         </div>
-        <div class="grid">
+
+        <div className="grid">
           <img src="./images/flower02.jpg" className="masonry-img" alt="flower arrangement by Chisako Goza"/>
         </div>
-        <div class="grid">
+
+        <div className="grid">
           <img src="./images/flower03.jpg" className="masonry-img" alt="flower arrangement by Chisako Goza" />
         </div>
-        <div class="grid">
+
+        <div className="grid">
           <img src="./images/flower04.jpg" className="masonry-img" alt="flower arrangement by Chisako Goza"/>
         </div>
-        <div class="grid">
+
+        <div className="grid">
           <img src="./images/flower05.jpg" className="masonry-img"  alt="flower arrangement by Chisako Goza"/>
         </div>
-        <div class="grid">
+        <div className="grid">
           <img src="./images/flower06.jpg" className="masonry-img" alt="flower arrangement by Chisako Goza"/>
         </div>
-        <div class="grid">
+        <div className="grid">
           <img src="./images/flower07.jpg" className="masonry-img" alt="flower arrangement by Chisako Goza"/>
         </div>
-        <div class="grid">
+        <div className="grid">
           <img src="./images/flower08.jpg" className="masonry-img" alt="flower arrangement by Chisako Goza"/>
         </div>
-        <div class="grid">
+        <div className="grid">
           <img src="./images/flower09.jpg" className="masonry-img" alt="flower arrangement by Chisako Goza"/>
         </div>
-        <div class="grid">
+        <div className="grid">
           <img src="./images/flower10.jpg" className="masonry-img" alt="flower arrangement by Chisako Goza"/>
         </div>
-        <div class="grid">
+        <div className="grid">
           <img src="./images/flower11.jpg" className="masonry-img" alt="flower arrangement by Chisako Goza"/>
         </div>
       </div>
