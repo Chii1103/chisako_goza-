@@ -4,8 +4,8 @@ const MainVisual =()=> {
     <div className="mainVisual-wrap" id="top">
       <h1 className='mv-h1'>Hello, I am Chisako Goza </h1>
 
-      <img className="mvSakuraS1" src="/images/sakuraS.png" />
-      <img className="mvSakuraS2" src="/images/sakuraS.png" />
+      <img className="mvSakuraS1" src="/images/sakuraS.png" alt="sakura"/>
+      <img className="mvSakuraS2" src="/images/sakuraS.png" alt="sakura"/>
       
       <div className="mvInner">
 

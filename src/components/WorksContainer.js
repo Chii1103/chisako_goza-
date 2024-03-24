@@ -49,12 +49,12 @@ const worksArray = [
 
 const WorkCard = ({ workImg, workTitle, workExplanation, gitHub, demo }) => (
   <div className="workContainer-wrap ">
-    <img className="workImage" src={workImg} alt="projects image"/>
+    <img className="workImage" src={workImg} alt="projects"/>
     <h3 className="workTitle">{workTitle}</h3>
     <div className="workExplanation">{workExplanation}</div>
     <div className="workButtons">
       {gitHub ? (
-        <a href={gitHub} target="_blank" className="workButton">
+        <a href={gitHub} target="_blank" className="workButton" rel="noreferrer">
           <VscGithubInverted />
         </a>
       ) : (

@@ -1,9 +1,9 @@
-const AboutCard = ({ aboutTitle, aboutImg }) => (
-  <div className="aboutContainer-wrap section">
-    <h3 className="aboutTitle">{aboutTitle}</h3>
-    <div className="aboutImg">{aboutImg}</div>
-  </div>
-);
+// const AboutCard = ({ aboutTitle, aboutImg }) => (
+//   <div className="aboutContainer-wrap section">
+//     <h3 className="aboutTitle">{aboutTitle}</h3>
+//     <div className="aboutImg">{aboutImg}</div>
+//   </div>
+// );
 
 
 const getColor = (percentage) => {
@@ -43,9 +43,9 @@ const AboutContainer = () => {
     <div className="section-wrap" id="aboutTop">
       <div className="titleWrap">
         <img className="titleSakura" src="../images/sakuraS.png" alt="sakura"/>
-        <a id="aboutLink" className="section-title">
+        <p id="aboutLink" className="section-title">
           About Me
-        </a>
+        </p>
       </div>
 
       {/* <div className="aboutFlexWrap"> */}
