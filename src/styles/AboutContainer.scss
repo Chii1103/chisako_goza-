@@ -41,11 +41,15 @@
   gap: 6%;
   justify-content: center;
   align-items: center;
-  .myself {
+
+  .myself-wrap {
     flex: 3;
     font-size: var(--font-size-L);
     line-height: 1.6;
-    font-family: var(--mv-font-family);
+    font-family: var(--primary-font-family);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   .skill-graph {
     flex: 1;

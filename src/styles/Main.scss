@@ -125,7 +125,7 @@
     padding: 0 10%;
     margin: 3% 0 0 0;
     .mv-top {
-      font-family: var(--mv-font-family);
+      font-family: var(--primary-font-family);
       font-size: var(--font-size-L);
       font-weight: 600;
       margin: 0 auto 24px;
@@ -201,7 +201,7 @@
         font-size: var(--font-size-M);
         font-weight: 600;
         line-height: 2rem;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.1rem;
       }
     }
   }

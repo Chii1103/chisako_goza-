@@ -10,7 +10,7 @@ const MainVisual =()=> {
       <div className="mvInner">
 
       <div className="mv-top">
-          I am a front end  developer from Kyoto, Japan,
+          I am a front end  developer from Kyoto, Japan,<br/>
           currently based in New York, USA.
         </div>
 

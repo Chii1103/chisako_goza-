@@ -50,8 +50,8 @@ const AboutContainer = () => {
 
       {/* <div className="aboutFlexWrap"> */}
         <div className="aboutContainer sectionInner">
-          <p className="myself">
-            I grew up in rural Japan and spend the first several years of my
+          <p className="myself-wrap">
+           <p className="myself-first"> I grew up in rural Japan and spend the first several years of my
             career in a client-facing role as a conference center event
             coordinator in Kyoto. Following the COVID-19 pandemic, I received
             the Mendix Rapid Developer certification and began my first step
@@ -59,12 +59,13 @@ const AboutContainer = () => {
             collaborated with dozens of clients to determine the scope of their
             projects and assess their technical requirements, and have routinely
             developed, optimized, and maintained a range of websites and
-            applications. 
-            <br/>My coding language core competencies are HTML, CSS,
+            applications. </p>
+            <p className="myself-second">My coding language core competencies are HTML, CSS,
             JavaScript and React. Although changing careers and more recently
             the country I live in has been difficult, I am proud of the progress
             I have made so far in my professional journey and I am excited to
             continue to build upon my skill set!
+            </p>
           </p>
 
         <div className="skill-graph sectionInner">
