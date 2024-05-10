@@ -45,6 +45,13 @@ const worksArray = [
     gitHub: "https://github.com/Chii1103/Weather-App",
     //   demo:'',
   },
+  {
+    workImg: "/images/GoalTracker-Macbook.png",
+    workTitle: "Goal Tracker App",
+    workExplanation: "#MaterialUI #React #JavaScript ",
+    gitHub: "https://github.com/Chii1103/Your-Goal-Tracker",
+    //   demo:'',
+  },
 ];
 
 const WorkCard = ({ workImg, workTitle, workExplanation, gitHub, demo }) => (
